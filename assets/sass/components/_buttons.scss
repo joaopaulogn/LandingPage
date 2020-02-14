@@ -1,0 +1,22 @@
+.btn {
+  &:link,
+  &:visited {
+    display: inline-block;
+    font-size: $font-size-p;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    padding: 1.5rem 1rem;
+  }
+
+  &--desactivated {
+    background-color: $grayish-blue-light;
+    color: $dark-blue;
+    box-shadow: 0 0.4rem 0.8rem lighten($dark-blue, 50%);
+  }
+
+  &--activated {
+    background-color: $soft-blue;
+    color: $white;
+    box-shadow: 0 0.4rem 0.8rem darken($white, 30%);
+  }
+}

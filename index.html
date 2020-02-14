@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="João Paulo Gonçalves Neto">
+    <meta name="description" content="Bookmark landing page challenge from Frontend Mentor">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <title>Bookmark landing page</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo-box">
+                <img src="assets/images/logo-bookmark.svg" alt="Logo" class="header__logo">
+            </div>
+
+            <nav class="header__navbar">
+                <img src="assets/images/icon-hamburger.svg" alt="Menu" class="header__menu-mobile">
+
+                <ul class="header__menu-desktop">
+                    <li class="header__item">
+                        <a href="#features" class="header__link">Features</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#pricing" class="header__link">Pricing</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#contact" class="header__link">Contact</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Login</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="section-home">
+            <div class="section-home__container">
+                <div class="section-home__hero-box">
+                    <img src="assets/images/illustration-hero.svg" alt="Hero banner" class="section-home__hero">
+                </div>
+
+                <div class="section-home__content">
+                    <h1 class="heading-primary u-margin-bottom-sm">A Simple Bookmark Manager</h1>
+                    <p class="paragraph">
+                        A clean and simple interface to organize your favourite websites. Open a new browser tab and see
+                        your sites load instantly. Try it for free.
+                    </p>
+                    <div class="section-home__btn-box">
+                        <a href="#" class="btn btn--activated u-margin-right-sm">Get in on Chrome</a>
+                        <a href="#" class="btn btn--desactivated">Get in on Firefox</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-features">
+            <h2 class="heading-secondary">Features</h2>
+            <p class="paragraph">
+                Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync
+                between your devices so you can access them on the go.
+            </p>
+
+            <ul class="section-features__feature-box">
+                <li class="section-features__feature" data-animation="nav-item">
+                    <span class="section-features__feature-text" data-animation="nav-title">Simple Bookmarking</span>
+                </li>
+                <li class="section-features__feature" data-animation="nav-item">
+                    <span class="section-features__feature-text" data-animation="nav-title">Speedy Searching</span>
+                </li>
+                <li class="section-features__feature" data-animation="nav-item">
+                    <span class="section-features__feature-text" data-animation="nav-title">Easy Sharing</span>
+                </li>
+            </ul>
+
+            <article class="section-features__content" data-animation="nav-content">
+                <img src="assets/images/illustration-features-tab-1.svg" alt="First illustration feature"
+                    class="section-feature__illustration-feature">
+
+                <div class="section-features__text-box">
+                    <h2 class="heading-secondary">Bookmark in one click</h2>
+                    <p class="paragraph">
+                        Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete
+                        control over how you manage your favourite sites.
+                    </p>
+                </div>
+            </article>
+
+            <article class="section-features__content" data-animation="nav-content">
+                <img src="assets/images/illustration-features-tab-2.svg" alt="First illustration feature"
+                    class="section-feature__illustration-feature">
+
+                <div class="section-features__text-box">
+                    <h2 class="heading-secondary">Intelligent Search</h2>
+                    <p class="paragraph">
+                        Our powerful search feature will help you find saved sites in no time at all. No need to trawl
+                        through all of your bookmarks.
+                    </p>
+                </div>
+            </article>
+
+            <article class="section-features__content" data-animation="nav-content">
+                <img src="assets/images/illustration-features-tab-3.svg" alt="First illustration feature"
+                    class="section-feature__illustration-feature">
+
+                <div class="section-features__text-box">
+                    <h2 class="heading-secondary">Share your bookmarks</h2>
+                    <p class="paragraph">
+                        Easily share your bookmarks and collections with others. Create a shareable link that you can
+                        send at the click of a button.
+                    </p>
+                </div>
+            </article>
+
+        </section>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

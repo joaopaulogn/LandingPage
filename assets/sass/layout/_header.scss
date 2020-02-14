@@ -1,0 +1,9 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8rem;
+
+  &__menu-desktop {
+    display: none;
+  }
+}

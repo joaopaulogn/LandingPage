@@ -1,0 +1,27 @@
+.section-features {
+  text-align: center;
+
+  &__feature-box {
+    margin-bottom: 6rem;
+    margin-top: 2rem;
+  }
+
+  &__feature {
+    padding: 2rem;
+    border-bottom: 0.1rem solid darken($grayish-blue-light, 5%);
+
+    &:first-child {
+      border-top: 0.1rem solid darken($grayish-blue-light, 5%);
+    }
+
+    &-text {
+      font-size: $font-size-p;
+      font-weight: 700;
+      padding: 2rem 0;
+    }
+  }
+
+  &__text-box {
+    margin-top: 4rem;
+  }
+}

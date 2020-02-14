@@ -1,0 +1,18 @@
+// Tab Navigation styles
+[data-animation="nav-title"] {
+    border-color: transparent;
+}
+
+.activeTabItem {
+  border-bottom: $soft-red solid 3px;
+  transition: border-color .5s;
+}
+
+[data-animation="nav-content"] {
+  display: none;
+}
+
+.activeTabContent {
+  display: block;
+  animation: fadeIn .5s;
+}
