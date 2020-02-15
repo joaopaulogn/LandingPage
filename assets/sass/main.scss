@@ -12,7 +12,9 @@
 @import "base/utilities";
 
 // Components
+@import "components/arrow";
 @import "components/buttons";
+@import "components/logo";
 
 // Layout styles
 @import "layout/header";
@@ -20,7 +22,9 @@
 
 // Pages styles
 @import "pages/contact";
+@import "pages/faq";
 @import "pages/features";
+@import "pages/footer";
 @import "pages/home";
 @import "pages/pricing";
 

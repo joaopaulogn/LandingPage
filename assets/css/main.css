@@ -6,6 +6,22 @@
     opacity: 1;
     transform: translateX(0); } }
 
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(-1rem); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes slideDown {
+  from {
+    opacity: 1;
+    transform: translateY(0); }
+  to {
+    opacity: 0;
+    transform: translateY(-1rem); } }
+
 *,
 *::after,
 *::before {
@@ -48,6 +64,10 @@ body {
   font-size: 2.5rem;
   color: #252b46; }
 
+.heading-tertiary {
+  font-size: 2rem;
+  color: #252b46; }
+
 .paragraph {
   font-size: 1.6rem;
   margin: 2rem 0 3rem 0; }
@@ -60,7 +80,7 @@ body {
   font-size: 1.6rem;
   font-weight: 500;
   border-radius: 0.5rem;
-  padding: 1.5rem 1rem; }
+  padding: 1.5rem .9rem; }
 
 .btn--desactivated {
   background-color: #f1f1f3;
@@ -72,6 +92,18 @@ body {
   color: #fff;
   box-shadow: 0 0.4rem 0.8rem #b3b3b3; }
 
+.btn--sub {
+  border: none;
+  padding: 1.5rem 1.3rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #fa5757;
+  font-family: inherit; }
+
+.logo--footer {
+  fill: #fff; }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -80,10 +112,60 @@ body {
     display: none; }
 
 .wrapper {
-  padding: 5rem 2.5rem 0 2.5rem; }
+  padding: 5rem 2.5rem 0 2.5rem;
+  padding-top: 5rem; }
+
+.section-contact {
+  text-align: center;
+  background-color: #5368df;
+  padding: 6rem 2.5rem; }
+  .section-contact__heading {
+    color: #fff; }
+  .section-contact__text {
+    display: block;
+    font-size: 1.6rem;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem; }
+  .section-contact__form {
+    margin-top: 3rem; }
+    .section-contact__form > * {
+      display: block;
+      margin: 0 auto;
+      width: 100%; }
+    .section-contact__form-input {
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border-radius: .5rem;
+      border: none;
+      font-size: 1.6rem;
+      font-family: inherit; }
+
+.section-faq {
+  text-align: center;
+  padding-bottom: 20rem; }
+  .section-faq__list {
+    text-align: initial;
+    margin-bottom: 4rem;
+    margin-right: 1rem; }
+  .section-faq__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    margin-bottom: 2rem;
+    border-bottom: 0.1rem solid #e3e3e8; }
+    .section-faq__question-text {
+      font-size: 1.6rem;
+      color: #252b46; }
+  .section-faq__answer {
+    margin: 1.5rem 0 2rem 0;
+    font-size: 1.6rem;
+    line-height: 2; }
 
 .section-features {
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 20rem; }
   .section-features__feature-box {
     margin-bottom: 6rem;
     margin-top: 2rem; }
@@ -99,20 +181,74 @@ body {
   .section-features__text-box {
     margin-top: 4rem; }
 
+.footer {
+  padding: 4rem 0;
+  text-align: center;
+  background-color: #252b46; }
+  .footer__navbar {
+    margin-top: 4rem; }
+  .footer__item {
+    padding: 2rem; }
+  .footer__link {
+    font-size: 1.6rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem; }
+  .footer__social {
+    display: flex;
+    justify-content: center; }
+
 .section-home {
   text-align: center;
-  margin-bottom: 12rem; }
+  margin-bottom: 20rem; }
+
+.section-pricing {
+  text-align: center;
+  padding-bottom: 20rem; }
+  .section-pricing__content {
+    margin-top: 4rem; }
+    .section-pricing__content-box {
+      background-color: #fff;
+      box-shadow: 0 0.5rem 1rem #e3e3e8;
+      border-radius: 1.5rem;
+      padding: 4rem 0 4rem 0;
+      margin-bottom: 4rem; }
+    .section-pricing__content-photo {
+      margin-bottom: 4rem; }
+    .section-pricing__content-split {
+      margin-bottom: 4rem;
+      width: 100%; }
 
 [data-animation="nav-title"] {
   border-color: transparent; }
 
 .activeTabItem {
   border-bottom: #fa5757 solid 3px;
-  transition: border-color .5s; }
+  transition: border-color 0.5s; }
 
 [data-animation="nav-content"] {
   display: none; }
 
 .activeTabContent {
   display: block;
-  animation: fadeIn .5s; }
+  animation: fadeIn 0.5s; }
+
+[data-animation="accordionAnswer"] {
+  display: none; }
+
+.activeAccordionAnswer {
+  display: block;
+  border-bottom: 0.1rem solid #e3e3e8;
+  padding-bottom: 1.5rem;
+  animation: slideUp 0.5s ease-out backwards; }
+
+.activeAccordionTerm {
+  border-bottom-color: transparent; }
+
+[data-animation="svg-arrow"] {
+  transition: .3s ease-out; }
+
+.activeAccordionState {
+  stroke: #fa5757;
+  transform: rotateX(180deg);
+  transform-origin: 50% 50%; }

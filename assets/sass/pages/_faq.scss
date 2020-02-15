@@ -1,0 +1,31 @@
+.section-faq {
+  text-align: center;
+  padding-bottom: $padding-section;
+
+  &__list {
+    text-align: initial;
+    margin-bottom: 4rem;
+    margin-right: 1rem;
+  }
+
+  &__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.5rem 0;
+    margin-bottom: 2rem;
+    border-bottom: 0.1rem solid darken($grayish-blue-light, 5%);
+
+    &-text {
+      font-size: $font-size-p;
+      color: $dark-blue;
+    }
+  }
+
+  &__answer {
+    margin: 1.5rem 0 2rem 0;
+    font-size: $font-size-p;
+    line-height: 2;
+  }
+}

@@ -1,0 +1,25 @@
+.footer {
+  padding: 4rem 0;
+  text-align: center;
+  background-color: $dark-blue;
+
+  &__navbar {
+    margin-top: 4rem;
+  }
+
+  &__item {
+    padding: 2rem;
+  }
+
+  &__link {
+    font-size: $font-size-p;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+  }
+}
