@@ -25,13 +25,50 @@
     }
 
     &-input {
-      margin-bottom: 2rem;
+      width: 100%;
       padding: 1.5rem;
-      border-radius: .5rem;
-      border: none;
-
       font-size: $font-size-p;
       font-family: inherit;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &__input-box {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+
+  &__alert {
+    background-color: $soft-red;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    margin-top: -2rem;
+
+    &-text {
+      font-size: $font-size-sm;
+      color: $white;
+      padding: 0.5rem 1.5rem;
+      text-align: left;
+      font-style: italic;
+      letter-spacing: 0.1rem;
+    }
+
+    &-icon {
+      line-height: 2.5rem;
+      width: 2.5rem;
+
+      font-size: $font-size-p;
+      color: $white;
+      background-color: $soft-red;
+      border-radius: 100%;
+
+      position: absolute;
+      top: 50%;
+      right: 2rem;
+      transform: translateY(-50%);
     }
   }
 }

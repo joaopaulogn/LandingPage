@@ -2,4 +2,18 @@
   &--footer {
     fill: $white;
   }
+
+  &__mobile {
+    &--text {
+      fill: $white;
+    }
+
+    &--icon {
+      fill: $dark-blue;
+    }
+
+    &--background {
+      fill: $white;
+    }
+  }
 }

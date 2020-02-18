@@ -7,6 +7,10 @@
     margin-top: 4rem;
   }
 
+  &__menu {
+    padding-bottom: 2rem;
+  }
+
   &__item {
     padding: 2rem;
   }
@@ -16,10 +20,5 @@
     color: $white;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
-  }
-
-  &__social {
-    display: flex;
-    justify-content: center;
   }
 }

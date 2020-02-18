@@ -1,9 +1,37 @@
 .header {
   display: flex;
   justify-content: space-between;
+
   margin-bottom: 8rem;
 
-  &__menu-desktop {
-    display: none;
+  &__item {
+    text-align: center;
+    border-bottom: 0.1rem solid $white;
+    opacity: 0.85;
+    padding: 2rem 0;
+  }
+
+  &__link {
+    color: $white;
+    font-size: $font-size-p;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+  }
+
+  &__mobile {
+    height: 100vh;
+    width: 100vw;
+
+    padding: 5rem 2.5rem 3rem 2.5rem;
+    background-color: $dark-blue;
+    backdrop-filter: blur(0.3rem);
+    opacity: .9;
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 0.1rem solid $white;
+      padding-bottom: 4rem;
+    }
   }
 }

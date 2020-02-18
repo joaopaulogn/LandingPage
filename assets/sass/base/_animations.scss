@@ -1,4 +1,4 @@
-@keyframes fadeIn {
+@keyframes fadeInRight {
   from {
     opacity: 0;
     transform: translateX(-3rem);
@@ -9,7 +9,29 @@
   }
 }
 
-@keyframes slideUp {
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-60%)
+  }
+  to {
+    opacity: .9;
+    transform: translateY(0)
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0.9;
+    transform: translateY(0)
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100%)
+  }
+}
+
+@keyframes slideDown {
   from {
     opacity: 0;
     transform: translateY(-1rem);
@@ -21,14 +43,18 @@
   }
 }
 
-@keyframes slideDown {
-  from {
-    opacity: 1;
-    transform: translateY(0);
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateX(-1.5rem);
   }
 
-  to {
-    opacity: 0;
-    transform: translateY(-1rem);
+  80% {
+    transform: translateX(0.5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

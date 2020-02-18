@@ -87,6 +87,7 @@ function initTabLinks() {
     // Constants for DOM Manipulation
     const internalLinks = document.querySelectorAll('[data-animation="internal-links"]');
 
+    // Checking if links exists
     if (internalLinks) {
         // Function to activate event
         function activeTabLinks(e) {
@@ -97,6 +98,14 @@ function initTabLinks() {
             const current = e.currentTarget;
             const hrefLink = current.getAttribute('href');
             const targetSection = document.querySelector(hrefLink);
+
+            if (current.classList.contains('header__link')) {
+                const menuMobile = document.querySelector('[data-animation="menu-mobile"]');
+                const header = document.querySelector('[data-animation="header"]');
+
+                menuMobile.classList.remove('activateMenuMobile');
+                header.classList.remove('disableHeader');
+            }
 
             targetSection.scrollIntoView({
                 block: 'start',
@@ -113,3 +122,84 @@ function initTabLinks() {
     }
 }
 initTabLinks();
+
+function initValidationForm() {
+    // Constants for DOM Manipulation
+    const btnForm = document.querySelector('[data-animation="form-btn"]');
+    const inputForm = document.querySelector('[data-animation="form-input"]');
+    const textAlertForm = document.querySelector('[data-animation="form-alert-text"]');
+    const iconAlertForm = document.querySelector('[data-animation="form-alert-icon"]');
+
+    // Function to activate event
+    function activeFormValidation(e) {
+        // To prevent default behavior
+        e.preventDefault();
+
+        // Classes to activate or desactivate events
+        const classActiveInput = 'activeInput';
+        const classTextAlert = 'activeTextAlert';
+        const classIconAlert = 'activeIconAlert';
+
+        // Constant to validation
+        const validEmail = ['@', '.com'];
+        // Condition if valid
+        const conditionIsValid = validEmail.every((email) => {
+            const valid = inputForm.value.includes(email);
+            return valid;
+        });
+
+        // Validation if the input has the necessary requirements
+        if (!conditionIsValid) {
+            // if not, add
+            inputForm.classList.add(classActiveInput);
+            textAlertForm.classList.add(classTextAlert);
+            iconAlertForm.classList.add(classIconAlert);
+        } else {
+            // if yes, remove
+            inputForm.classList.remove(classActiveInput);
+            textAlertForm.classList.remove(classTextAlert);
+            iconAlertForm.classList.remove(classIconAlert);
+        }
+    }
+
+    // Event
+    btnForm.addEventListener('click', (e) => {
+        activeFormValidation(e);
+    });
+}
+initValidationForm();
+
+function initMenuMobile() {
+    // Constants for DOM Manipulation
+    const menuMobile = document.querySelector('[data-animation="menu-mobile"]');
+    const iconMobile = document.querySelector('[data-animation="icon-mobile"]');
+    const header = document.querySelector('[data-animation="header"]');
+    const btnClose = document.querySelector('[data-animation="btn-close"]');
+
+    // Classes to activate or desactivate events
+    const classActivateHeader = 'disableHeader';
+    const classActivateMenu = 'activateMenuMobile';
+
+    // Activate function
+    function activateMenuMobile(e) {
+        e.preventDefault();
+
+        header.classList.add(classActivateHeader);
+        menuMobile.classList.add(classActivateMenu);
+    };
+
+    // Event to activate
+    iconMobile.addEventListener('click', (e) => {
+        activateMenuMobile(e);
+    })
+
+    // Disable function
+    function disableMenuMobile() {
+        header.classList.remove(classActivateHeader);
+        menuMobile.classList.remove(classActivateMenu);
+    }
+
+    // Event to disable
+    btnClose.addEventListener('click', disableMenuMobile);
+}
+initMenuMobile();

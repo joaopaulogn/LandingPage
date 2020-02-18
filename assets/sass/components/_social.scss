@@ -1,0 +1,9 @@
+.social-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__item {
+    padding: 0 2rem;
+  }
+}

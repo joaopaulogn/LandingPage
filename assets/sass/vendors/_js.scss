@@ -10,11 +10,12 @@
 
 [data-animation="nav-content"] {
   display: none;
+  overflow: hidden;
 }
 
 .activeTabContent {
   display: block;
-  animation: fadeIn 0.5s;
+  animation: fadeInRight 0.5s;
 }
 
 // Accordion List styles
@@ -27,7 +28,7 @@
   border-bottom: 0.1rem solid darken($grayish-blue-light, 5%);
   padding-bottom: 1.5rem;
 
-  animation: slideUp 0.5s ease-out backwards;
+  animation: slideDown 0.5s ease-out backwards;
 }
 
 .activeAccordionTerm {
@@ -35,11 +36,64 @@
 }
 
 [data-animation="svg-arrow"] {
-  transition: .3s ease-out;
+  transition: 0.3s ease-out;
 }
 
 .activeAccordionState {
   stroke: $soft-red;
   transform: rotateX(180deg);
   transform-origin: 50% 50%;
+}
+
+// Input validation styles
+[data-animation="form-input"] {
+  border: 0.1rem solid transparent;
+  border-radius: 0.5rem;
+}
+
+.activeInput {
+  border-color: $soft-red;
+  border-radius: 0.5rem 0.5rem 0 0;
+  transition: all 0.3s;
+}
+
+[data-animation="form-alert-text"] {
+  display: none;
+}
+
+.activeTextAlert {
+  display: block;
+  animation: fadeUp 0.3s ease-in-out;
+}
+
+[data-animation="form-alert-icon"] {
+  opacity: 0;
+}
+
+.activeIconAlert {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+// Menu mobile styles
+[data-animation="menu-mobile"] {
+  display: none;
+}
+
+.activateMenuMobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+
+  animation: fadeInDown 0.3s ease-out;
+}
+
+.disableHeader {
+  opacity: 0;
+  transition: 0.3s ease-in-out;
 }

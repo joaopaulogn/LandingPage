@@ -5,7 +5,7 @@
     font-size: $font-size-p;
     font-weight: 500;
     border-radius: 0.5rem;
-    padding: 1.5rem .9rem;
+    padding: 1.5rem 0.9rem;
   }
 
   &--desactivated {
@@ -20,14 +20,24 @@
     box-shadow: 0 0.4rem 0.8rem darken($white, 30%);
   }
 
-  &--sub {
+  &--form {
     border: none;
     padding: 1.5rem 1.3rem;
     border-radius: 0.5rem;
-
-    font-size: $font-size-p;
-    color: $white;
-    background-color: $soft-red;
     font-family: inherit;
+    color: $white;
+    font-size: $font-size-p;
+  }
+
+  &--sub {
+    background-color: $soft-red;
+  }
+
+  &--login {
+    background-color: transparent;
+    border: .1rem solid $white;
+    width: 100%;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
   }
 }
