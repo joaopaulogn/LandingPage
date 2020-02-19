@@ -12,20 +12,19 @@
 @import "base/utilities";
 
 // Components
-@import "components/arrow";
 @import "components/buttons";
 @import "components/logo";
 @import "components/social";
 
 // Layout styles
+@import "layout/contact";
 @import "layout/header";
+@import "layout/footer";
 @import "layout/wrapper";
 
 // Pages styles
-@import "pages/contact";
 @import "pages/faq";
 @import "pages/features";
-@import "pages/footer";
 @import "pages/home";
 @import "pages/pricing";
 

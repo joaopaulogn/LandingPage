@@ -3,21 +3,18 @@ body {
 }
 
 .heading-primary {
-  font-size: $font-size-h1;
-  color: $dark-blue;
+  @include font(h1);
 }
 
 .heading-secondary {
-  font-size: $font-size-h2;
-  color: $dark-blue;
+  @include font(h2);
 }
 
 .heading-tertiary {
-  font-size: $font-size-h3;
-  color: $dark-blue;
+  @include font(h3);
 }
 
 .paragraph {
-  font-size: $font-size-p;
-  margin: 2rem 0 3rem 0;
+  @include font(p);
+  margin: $margin-sm 0;
 }

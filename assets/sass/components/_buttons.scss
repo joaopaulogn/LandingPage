@@ -9,15 +9,15 @@
   }
 
   &--desactivated {
-    background-color: $grayish-blue-light;
-    color: $dark-blue;
-    box-shadow: 0 0.4rem 0.8rem lighten($dark-blue, 50%);
+    background-color: $color-grayish-blue-light;
+    color: $color-dark-blue;
+    box-shadow: 0 0.4rem 0.8rem lighten($color-dark-blue, 50%);
   }
 
   &--activated {
-    background-color: $soft-blue;
-    color: $white;
-    box-shadow: 0 0.4rem 0.8rem darken($white, 30%);
+    background-color: $color-soft-blue;
+    color: $color-white;
+    box-shadow: 0 0.4rem 0.8rem darken($color-white, 30%);
   }
 
   &--form {
@@ -25,17 +25,17 @@
     padding: 1.5rem 1.3rem;
     border-radius: 0.5rem;
     font-family: inherit;
-    color: $white;
+    color: $color-white;
     font-size: $font-size-p;
   }
 
   &--sub {
-    background-color: $soft-red;
+    background-color: $color-soft-red;
   }
 
   &--login {
     background-color: transparent;
-    border: .1rem solid $white;
+    border: .1rem solid $color-white;
     width: 100%;
     letter-spacing: .3rem;
     text-transform: uppercase;

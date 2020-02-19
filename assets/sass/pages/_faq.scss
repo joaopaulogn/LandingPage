@@ -1,10 +1,10 @@
 .section-faq {
   text-align: center;
-  padding-bottom: $padding-section;
+  padding-bottom: $padding-bottom-section;
 
   &__list {
     text-align: initial;
-    margin-bottom: 4rem;
+    margin-bottom: $margin-md;
     margin-right: 1rem;
   }
 
@@ -15,16 +15,16 @@
 
     padding: 1.5rem 0;
     margin-bottom: 2rem;
-    border-bottom: 0.1rem solid darken($grayish-blue-light, 5%);
+    border-bottom: 0.1rem solid darken($color-grayish-blue-light, 5%);
 
     &-text {
       font-size: $font-size-p;
-      color: $dark-blue;
+      color: $color-dark-blue;
     }
   }
 
   &__answer {
-    margin: 1.5rem 0 2rem 0;
+    margin: 1.5rem 0 $margin-sm 0;
     font-size: $font-size-p;
     line-height: 2;
   }

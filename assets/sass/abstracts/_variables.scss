@@ -1,10 +1,10 @@
 // COLORS
-$soft-blue: hsl(231, 69%, 60%);
-$dark-blue: hsl(229, 31%, 21%);
-$soft-red: hsl(0, 94%, 66%);
-$grayish-blue: hsl(229, 8%, 60%);
-$grayish-blue-light: hsl(240, 8%, 95%);
-$white: #fff;
+$color-soft-blue: hsl(231, 69%, 60%);
+$color-dark-blue: hsl(229, 31%, 21%);
+$color-soft-red: hsl(0, 94%, 66%);
+$color-grayish-blue: hsl(229, 8%, 60%);
+$color-grayish-blue-light: hsl(240, 8%, 95%);
+$color-white: #fff;
 
 // FONTS
 $font-size-h1: 3rem;
@@ -14,4 +14,16 @@ $font-size-p: 1.6rem;
 $font-size-sm: 1.2rem;
 
 // LENGHTS
-$padding-section: 20rem;
+$padding-bottom-section: 15rem;
+$padding-top-section: 5rem;
+
+$padding-wrapper-lg: 8rem;
+$padding-wrapper-sm: 2.5rem;
+
+$padding-sm: 2rem;
+$padding-md: 4rem;
+$padding-lg: 6rem;
+
+$margin-sm: 2rem;
+$margin-md: 4rem;
+$margin-lg: 6rem;

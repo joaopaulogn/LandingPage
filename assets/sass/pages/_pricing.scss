@@ -1,24 +1,25 @@
 .section-pricing {
   text-align: center;
-  padding-bottom: $padding-section;
+  padding-bottom: $padding-bottom-section;
+  padding-top: $padding-top-section;
 
   &__content {
-      margin-top: 4rem;
+      margin-top: $margin-md;
 
     &-box {
-      background-color: $white;
-      box-shadow: 0 .5rem 1rem darken($grayish-blue-light, 5%);
+      background-color: $color-white;
+      box-shadow: 0 .5rem 1rem darken($color-grayish-blue-light, 5%);
       border-radius: 1.5rem;
-      padding: 4rem 0 4rem 0;
-      margin-bottom: 4rem;
+      padding: $padding-md 0;
+      margin-bottom: $margin-md;
     }
 
     &-photo {
-      margin-bottom: 4rem;
+      margin-bottom: $margin-md;
     }
 
     &-split {
-      margin-bottom: 4rem;
+      margin-bottom: $margin-md;
       width: 100%;
     }
   }

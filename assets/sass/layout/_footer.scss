@@ -1,0 +1,24 @@
+.footer {
+  padding: $padding-md 0;
+  text-align: center;
+  background-color: $color-dark-blue;
+
+  &__navbar {
+    margin-top: $margin-md;
+  }
+
+  &__menu {
+    padding-bottom: $padding-sm;
+  }
+
+  &__item {
+    padding: $padding-sm;
+  }
+
+  &__link {
+    font-size: $font-size-p;
+    color: $color-white;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+  }
+}

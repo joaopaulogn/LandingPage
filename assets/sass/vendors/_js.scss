@@ -4,7 +4,7 @@
 }
 
 .activeTabItem {
-  border-bottom: $soft-red solid 3px;
+  border-bottom: $color-soft-red solid 3px;
   transition: border-color 0.5s;
 }
 
@@ -25,7 +25,7 @@
 
 .activeAccordionAnswer {
   display: block;
-  border-bottom: 0.1rem solid darken($grayish-blue-light, 5%);
+  border-bottom: 0.1rem solid darken($color-grayish-blue-light, 5%);
   padding-bottom: 1.5rem;
 
   animation: slideDown 0.5s ease-out backwards;
@@ -40,7 +40,7 @@
 }
 
 .activeAccordionState {
-  stroke: $soft-red;
+  stroke: $color-soft-red;
   transform: rotateX(180deg);
   transform-origin: 50% 50%;
 }
@@ -52,7 +52,7 @@
 }
 
 .activeInput {
-  border-color: $soft-red;
+  border-color: $color-soft-red;
   border-radius: 0.5rem 0.5rem 0 0;
   transition: all 0.3s;
 }
@@ -96,4 +96,12 @@
 .disableHeader {
   opacity: 0;
   transition: 0.3s ease-in-out;
+}
+
+.activateHeader {
+  background-color: $color-white;
+  border-radius: 0 0 0.5rem 0.5rem;
+  box-shadow: 0 0.4rem 0.8rem darken($color-white, 30%);
+
+  transition: box-shadow 0.3s;
 }

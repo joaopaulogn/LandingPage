@@ -1,0 +1,13 @@
+@mixin font($fontName) {
+  color: $color-dark-blue;
+
+  @if ($fontName == h1) {
+    font-size: $font-size-h1;
+  } @else if($fontName == h2) {
+    font-size: $font-size-h2;
+  } @else if($fontName == h3) {
+    font-size: $font-size-h3;
+  } @else if($fontName == p) {
+    font-size: $font-size-p;
+  }
+}

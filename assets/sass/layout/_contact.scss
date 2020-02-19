@@ -1,0 +1,74 @@
+.section-contact {
+  text-align: center;
+  background-color: $color-soft-blue;
+  padding: $padding-lg 2.5rem;
+
+  &__heading {
+    color: $color-white;
+  }
+
+  &__text {
+    display: block;
+    font-size: $font-size-p;
+    color: $color-white;
+    text-transform: uppercase;
+    margin-bottom:$margin-sm;
+  }
+
+  &__form {
+    margin-top: $margin-md;
+
+    & > * {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    &-input {
+      width: 100%;
+      padding: 1.5rem;
+      font-size: $font-size-p;
+      font-family: inherit;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &__input-box {
+    position: relative;
+    margin-bottom: $margin-sm;
+  }
+
+  &__alert {
+    background-color: $color-soft-red;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    margin-top: -$margin-sm;
+
+    &-text {
+      font-size: $font-size-sm;
+      color: $color-white;
+      padding: 0.5rem 1.5rem;
+      text-align: left;
+      font-style: italic;
+      letter-spacing: 0.1rem;
+    }
+
+    &-icon {
+      line-height: 2.5rem;
+      width: 2.5rem;
+
+      font-size: $font-size-p;
+      color: $color-white;
+      background-color: $color-soft-red;
+      border-radius: 100%;
+
+      position: absolute;
+      top: 50%;
+      right: 2rem;
+      transform: translateY(-50%);
+    }
+  }
+}

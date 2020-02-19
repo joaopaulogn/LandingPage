@@ -1,28 +1,29 @@
 .section-features {
   text-align: center;
-  padding-bottom: $padding-section;
+  padding-bottom: $padding-bottom-section;
+  padding-top: $padding-top-section;
 
   &__feature-box {
-    margin-bottom: 6rem;
-    margin-top: 2rem;
+    margin-bottom: $margin-lg;
+    margin-top: $margin-sm;
   }
 
   &__feature {
-    padding: 2rem;
-    border-bottom: 0.1rem solid darken($grayish-blue-light, 5%);
+    padding: $padding-sm;
+    border-bottom: 0.1rem solid darken($color-grayish-blue-light, 5%);
 
     &:first-child {
-      border-top: 0.1rem solid darken($grayish-blue-light, 5%);
+      border-top: 0.1rem solid darken($color-grayish-blue-light, 5%);
     }
 
     &-text {
       font-size: $font-size-p;
       font-weight: 700;
-      padding: 2rem 0;
+      padding: $padding-sm 0;
     }
   }
 
   &__text-box {
-    margin-top: 4rem;
+    margin-top: $margin-md;
   }
 }

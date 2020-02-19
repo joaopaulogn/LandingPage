@@ -1,19 +1,19 @@
 .logo {
   &--footer {
-    fill: $white;
+    fill: $color-white;
   }
 
   &__mobile {
     &--text {
-      fill: $white;
+      fill: $color-white;
     }
 
     &--icon {
-      fill: $dark-blue;
+      fill: $color-dark-blue;
     }
 
     &--background {
-      fill: $white;
+      fill: $color-white;
     }
   }
 }

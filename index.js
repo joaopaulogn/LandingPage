@@ -1,3 +1,13 @@
+// Scroll animation
+const header = document.querySelector('[data-animation="header"]');
+const heightHeader = header.offsetHeight;
+
+function activateScroll() {
+    header.classList.add('activateHeader');
+}
+
+window.addEventListener('scroll', activateScroll);
+
 // Tab Navigation
 function initNavTab() {
     // Constants for DOM manipulation
@@ -38,7 +48,6 @@ function initNavTab() {
             })
         })
     }
-
 }
 initNavTab();
 
@@ -98,6 +107,7 @@ function initTabLinks() {
             const current = e.currentTarget;
             const hrefLink = current.getAttribute('href');
             const targetSection = document.querySelector(hrefLink);
+            const topSection = targetSection.offsetTop;
 
             if (current.classList.contains('header__link')) {
                 const menuMobile = document.querySelector('[data-animation="menu-mobile"]');
@@ -107,10 +117,10 @@ function initTabLinks() {
                 header.classList.remove('disableHeader');
             }
 
-            targetSection.scrollIntoView({
-                block: 'start',
+            window.scrollTo({
+                top: (topSection - heightHeader),
                 behavior: 'smooth',
-            });
+            })
         };
 
         // Event
@@ -140,25 +150,17 @@ function initValidationForm() {
         const classTextAlert = 'activeTextAlert';
         const classIconAlert = 'activeIconAlert';
 
-        // Constant to validation
-        const validEmail = ['@', '.com'];
-        // Condition if valid
-        const conditionIsValid = validEmail.every((email) => {
-            const valid = inputForm.value.includes(email);
-            return valid;
-        });
-
         // Validation if the input has the necessary requirements
-        if (!conditionIsValid) {
-            // if not, add
-            inputForm.classList.add(classActiveInput);
-            textAlertForm.classList.add(classTextAlert);
-            iconAlertForm.classList.add(classIconAlert);
-        } else {
+        if (inputForm.value.includes('@') && (inputForm.value.endsWith('.com') || inputForm.value.endsWith('.com.br'))) {
             // if yes, remove
             inputForm.classList.remove(classActiveInput);
             textAlertForm.classList.remove(classTextAlert);
             iconAlertForm.classList.remove(classIconAlert);
+        } else {
+            // if not, add
+            inputForm.classList.add(classActiveInput);
+            textAlertForm.classList.add(classTextAlert);
+            iconAlertForm.classList.add(classIconAlert);
         }
     }
 
