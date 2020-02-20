@@ -5,7 +5,7 @@
 
   &__feature-box {
     margin-bottom: $margin-lg;
-    margin-top: $margin-sm;
+    margin-top: $margin-md;
   }
 
   &__feature {
@@ -17,8 +17,8 @@
     }
 
     &-text {
-      font-size: $font-size-p;
-      font-weight: 700;
+      font-size: $font-size-default;
+      font-weight: 400;
       padding: $padding-sm 0;
     }
   }

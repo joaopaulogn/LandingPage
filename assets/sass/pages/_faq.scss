@@ -5,6 +5,7 @@
   &__list {
     text-align: initial;
     margin-bottom: $margin-md;
+    margin-top: $margin-md;
     margin-right: 1rem;
   }
 
@@ -13,19 +14,21 @@
     justify-content: space-between;
     align-items: center;
 
+    font-weight: 400;
     padding: 1.5rem 0;
     margin-bottom: 2rem;
     border-bottom: 0.1rem solid darken($color-grayish-blue-light, 5%);
 
     &-text {
-      font-size: $font-size-p;
-      color: $color-dark-blue;
+      font-size: $font-size-default;
+      color: $color-dark-blue
     }
   }
 
   &__answer {
-    margin: 1.5rem 0 $margin-sm 0;
-    font-size: $font-size-p;
+    font-size: $font-size-default;
     line-height: 2;
+    margin: 1.5rem 0 $margin-sm 0;
+    color: darken($color-white, 50%);
   }
 }

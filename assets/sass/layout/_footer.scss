@@ -16,8 +16,8 @@
   }
 
   &__link {
-    font-size: $font-size-p;
-    color: $color-white;
+    font-size: $font-size-default;
+    color: darken($color-white, 20%);
     text-transform: uppercase;
     letter-spacing: 0.3rem;
   }

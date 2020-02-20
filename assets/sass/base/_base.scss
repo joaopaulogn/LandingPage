@@ -1,3 +1,4 @@
+// Reset for all elements
 *,
 *::after,
 *::before {
@@ -6,14 +7,17 @@
   box-sizing: inherit;
 }
 
+// Defining how much 1rem is worth
 html {
   font-size: 62.5%;
 }
 
+// Setting the border-box property to body, so all elements will inherit it
 body {
   box-sizing: border-box;
 }
 
+// Default styles
 img {
   max-width: 100%;
 }

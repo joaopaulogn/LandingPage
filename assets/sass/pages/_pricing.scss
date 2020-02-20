@@ -10,7 +10,7 @@
       background-color: $color-white;
       box-shadow: 0 .5rem 1rem darken($color-grayish-blue-light, 5%);
       border-radius: 1.5rem;
-      padding: $padding-md 0;
+      padding: $padding-md 0 2.5rem 0;
       margin-bottom: $margin-md;
     }
 
@@ -18,8 +18,16 @@
       margin-bottom: $margin-md;
     }
 
+    &-text {
+      font-size: $font-size-default;
+      color: darken($color-white, 50%);
+      margin-bottom: $margin-sm;
+      margin-top: 1rem;
+    }
+
     &-split {
-      margin-bottom: $margin-md;
+      margin-bottom: $margin-sm;
+      margin-top: $margin-sm;
       width: 100%;
     }
   }

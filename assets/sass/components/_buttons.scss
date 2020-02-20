@@ -2,7 +2,7 @@
   &:link,
   &:visited {
     display: inline-block;
-    font-size: $font-size-p;
+    font-size: $font-size-btn;
     font-weight: 500;
     border-radius: 0.5rem;
     padding: 1.5rem 0.9rem;
@@ -10,7 +10,7 @@
 
   &--desactivated {
     background-color: $color-grayish-blue-light;
-    color: $color-dark-blue;
+    color: darken($color-white, 60%);
     box-shadow: 0 0.4rem 0.8rem lighten($color-dark-blue, 50%);
   }
 
@@ -18,6 +18,11 @@
     background-color: $color-soft-blue;
     color: $color-white;
     box-shadow: 0 0.4rem 0.8rem darken($color-white, 30%);
+
+    &:not(:first-child) {
+      padding-right: 3rem;
+      padding-left: 3rem;
+    }
   }
 
   &--form {
@@ -26,11 +31,12 @@
     border-radius: 0.5rem;
     font-family: inherit;
     color: $color-white;
-    font-size: $font-size-p;
+    font-size: $font-size-default;
   }
 
   &--sub {
     background-color: $color-soft-red;
+    color: darken($color-white, 10%);
   }
 
   &--login {
@@ -39,5 +45,9 @@
     width: 100%;
     letter-spacing: .3rem;
     text-transform: uppercase;
+  }
+
+  &--pricing {
+    padding: 1.5rem 3rem;
   }
 }

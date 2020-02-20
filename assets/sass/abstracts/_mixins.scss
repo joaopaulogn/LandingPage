@@ -8,6 +8,7 @@
   } @else if($fontName == h3) {
     font-size: $font-size-h3;
   } @else if($fontName == p) {
-    font-size: $font-size-p;
+    font-size: $font-size-btn;
+    color: darken($color-white, 50%);
   }
 }

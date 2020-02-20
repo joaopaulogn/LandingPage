@@ -5,14 +5,15 @@
 
   &__heading {
     color: $color-white;
+    font-weight: 400;
   }
 
   &__text {
     display: block;
-    font-size: $font-size-p;
+    font-size: $font-size-default;
     color: $color-white;
     text-transform: uppercase;
-    margin-bottom:$margin-sm;
+    margin-bottom: $margin-sm;
   }
 
   &__form {
@@ -23,17 +24,6 @@
       margin: 0 auto;
       width: 100%;
     }
-
-    &-input {
-      width: 100%;
-      padding: 1.5rem;
-      font-size: $font-size-p;
-      font-family: inherit;
-
-      &:focus {
-        outline: none;
-      }
-    }
   }
 
   &__input-box {
@@ -41,34 +31,43 @@
     margin-bottom: $margin-sm;
   }
 
-  &__alert {
-    background-color: $color-soft-red;
+  &__input {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: $font-size-default;
+    font-family: inherit;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: darken($color-white, 20%);
+    }
+  }
+
+  &__alert-text {
+    text-align: left;
+    font-style: italic;
+    letter-spacing: 0.1rem;
+    font-size: $font-size-sm;
+    color: $color-white;
+    padding: 0.5rem 1.5rem;
+    margin-top: -$margin-sm;
+    margin-bottom: $margin-sm;
+
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-    margin-top: -$margin-sm;
+  }
 
-    &-text {
-      font-size: $font-size-sm;
-      color: $color-white;
-      padding: 0.5rem 1.5rem;
-      text-align: left;
-      font-style: italic;
-      letter-spacing: 0.1rem;
-    }
+  &__alert-icon {
+    font-size: $font-size-md;
+    color: $color-soft-red;
+    background-color: $color-white;
 
-    &-icon {
-      line-height: 2.5rem;
-      width: 2.5rem;
-
-      font-size: $font-size-p;
-      color: $color-white;
-      background-color: $color-soft-red;
-      border-radius: 100%;
-
-      position: absolute;
-      top: 50%;
-      right: 2rem;
-      transform: translateY(-50%);
-    }
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
   }
 }

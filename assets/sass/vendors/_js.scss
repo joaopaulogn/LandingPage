@@ -4,6 +4,7 @@
 }
 
 .activeTabItem {
+  font-weight: 500;
   border-bottom: $color-soft-red solid 3px;
   transition: border-color 0.5s;
 }
@@ -61,8 +62,9 @@
   display: none;
 }
 
-.activeTextAlert {
+.invalidTextAlert {
   display: block;
+  background-color: $color-soft-red;
   animation: fadeUp 0.3s ease-in-out;
 }
 
@@ -70,7 +72,7 @@
   opacity: 0;
 }
 
-.activeIconAlert {
+.invalidIconAlert {
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
 }
