@@ -5,6 +5,7 @@ $color-soft-red: hsl(0, 94%, 66%);
 $color-grayish-blue: hsl(229, 8%, 60%);
 $color-grayish-blue-light: hsl(240, 8%, 95%);
 $color-white: #fff;
+$color-black: #000;
 
 // FONTS
 $font-family-default: "Rubik", sans-serif;
@@ -31,3 +32,6 @@ $padding-lg: 6rem;
 $margin-sm: 2rem;
 $margin-md: 4rem;
 $margin-lg: 6rem;
+
+// Transition
+$transition-behavior-default: 0.3s ease-in-out;

@@ -1,0 +1,14 @@
+// Tab navigation styles
+[data-animation="nav-content"] {
+  display: none;
+  overflow: hidden;
+}
+.activeTabItem {
+  font-weight: 500;
+  border-bottom: $color-soft-red solid 3px;
+  transition: border-color 0.5s;
+}
+.activeTabContent {
+  display: block;
+  animation: fadeInRight 0.5s;
+}

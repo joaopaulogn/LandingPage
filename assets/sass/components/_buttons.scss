@@ -37,6 +37,10 @@
   &--sub {
     background-color: $color-soft-red;
     color: darken($color-white, 10%);
+
+    &:focus {
+      outline: none;
+    }
   }
 
   &--login {

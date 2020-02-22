@@ -1,3 +1,4 @@
+// Fades content from left to right
 @keyframes fadeInRight {
   from {
     opacity: 0;
@@ -9,29 +10,8 @@
   }
 }
 
+// Fades content from top to bottom
 @keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-60%)
-  }
-  to {
-    opacity: .9;
-    transform: translateY(0)
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0.9;
-    transform: translateY(0)
-  }
-  to {
-    opacity: 0;
-    transform: translateY(-100%)
-  }
-}
-
-@keyframes slideDown {
   from {
     opacity: 0;
     transform: translateY(-1rem);
@@ -43,7 +23,20 @@
   }
 }
 
-@keyframes fadeUp {
+// Shows content from top to bottom
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-60%);
+  }
+  to {
+    opacity: 0.9;
+    transform: translateY(0);
+  }
+}
+
+// Show content from left to right
+@keyframes slideInRight {
   0% {
     opacity: 0;
     transform: translateX(-1.5rem);

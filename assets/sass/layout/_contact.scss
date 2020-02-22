@@ -3,6 +3,8 @@
   background-color: $color-soft-blue;
   padding: $padding-lg 2.5rem;
 
+  position: relative;
+
   &__heading {
     color: $color-white;
     font-weight: 400;
@@ -47,6 +49,8 @@
   }
 
   &__alert-text {
+    display: none;
+    opacity: 0;
     text-align: left;
     font-style: italic;
     letter-spacing: 0.1rem;
@@ -62,12 +66,14 @@
 
   &__alert-icon {
     font-size: $font-size-md;
-    color: $color-soft-red;
     background-color: $color-white;
 
     position: absolute;
     top: 50%;
     right: 2rem;
     transform: translateY(-50%);
+
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
   }
 }

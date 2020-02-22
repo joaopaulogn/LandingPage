@@ -1,0 +1,51 @@
+// Extend styles
+%inputStates {
+  border-radius: 0.5rem 0.5rem 0 0;
+  transition: border-color $transition-behavior-default;
+}
+
+%alertTextStates {
+  display: block;
+  opacity: 1;
+  transition: $transition-behavior-default;
+}
+
+%alertIconState {
+  opacity: 1;
+  transition: opacity $transition-behavior-default;
+}
+
+// Input styles
+[data-animation="form-input"] {
+  border: 0.1rem solid transparent;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+}
+.invalidInput {
+  @extend %inputStates;
+  border-color: $color-soft-red;
+}
+.validInput {
+  @extend %inputStates;
+  border-color: $color-dark-blue;
+}
+
+// Text alert styles
+.invalidTextAlert {
+  @extend %alertTextStates;
+  background-color: $color-soft-red;
+}
+.validTextAlert {
+  @extend %alertTextStates;
+  background-color: $color-dark-blue;
+}
+
+// Icon alert styles
+.invalidIconAlert {
+  @extend %alertIconState;
+  color: $color-soft-red;
+}
+.validIconAlert {
+  @extend %alertIconState;
+  color: $color-dark-blue;
+}
