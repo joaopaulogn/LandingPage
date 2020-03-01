@@ -20,16 +20,10 @@
 @import "layout/contact";
 @import "layout/header";
 @import "layout/footer";
-@import "layout/wrapper";
+@import "layout/main";
 
 // Pages styles
 @import "pages/faq";
 @import "pages/features";
 @import "pages/home";
 @import "pages/pricing";
-
-// Third-party styles
-@import "scripts/accordion-list";
-@import "scripts/form-validation";
-@import "scripts/menu-mobile";
-@import "scripts/tab-navigation";

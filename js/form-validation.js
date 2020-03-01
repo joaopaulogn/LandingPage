@@ -42,6 +42,7 @@ export default function initValidationForm() {
             return re.test(email);
         }
 
+        inputForm.style.borderRadius = '0.5rem 0.5rem 0 0';
         textAlert.style.animation = 'slideInRight 0.3s ease-in-out';
 
         // Validation if the input has the necessary requirements

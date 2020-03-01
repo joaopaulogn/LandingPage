@@ -3,6 +3,54 @@
   padding-bottom: $padding-bottom-section;
   padding-top: 8rem;
 
+  @media only screen and (min-width: 1000px) {
+    padding-right: 2vw;
+    padding-left: 7.5vw;
+    text-align: left;
+
+    .heading-primary {
+      max-width: 560px;
+    }
+
+    .paragraph {
+      max-width: 440px;
+    }
+
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__content {
+      margin-right: auto;
+    }
+
+    &__hero-box {
+      order: 1;
+      margin-bottom: 0;
+    }
+  }
+
+  &__hero-box {
+    margin-bottom: 6rem;
+
+    &::before {
+      content: "";
+      display: block;
+
+      position: absolute;
+      top: 37%;
+      right: 0%;
+      height: 45vh;
+      width: 35vw;
+      background-color: $color-soft-blue;
+      border-bottom-left-radius: 40%;
+
+      z-index: -20;
+    }
+  }
+
   &__btn-box {
     margin-top: 3rem;
   }

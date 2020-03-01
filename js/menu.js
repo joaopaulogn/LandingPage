@@ -1,3 +1,4 @@
+// Menu mobile
 export default function initMenuMobile() {
     // Constants for DOM Manipulation
     const iconMobile = document.querySelector('[data-animation="icon-mobile"]');

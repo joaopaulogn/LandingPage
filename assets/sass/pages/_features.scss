@@ -3,6 +3,41 @@
   padding-bottom: $padding-bottom-section;
   padding-top: $padding-top-section;
 
+  @media only screen and (min-width: 600px) {
+    &__feature-box {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__text-box {
+      width: 65vw;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+
+    .paragraph {
+      width: 445px;
+    }
+
+    &__illustration-feature {
+      margin-right: $margin-md;
+    }
+
+    &__illustration {
+      width: 100%;
+    }
+
+    &__text-box {
+      text-align: left;
+    }
+  }
+
   &__feature-box {
     margin-bottom: $margin-lg;
     margin-top: $margin-md;
@@ -11,9 +46,14 @@
   &__feature {
     padding: $padding-sm;
     border-bottom: 0.1rem solid darken($color-grayish-blue-light, 5%);
+    transition: all 0.3s;
 
     &:first-child {
       border-top: 0.1rem solid darken($color-grayish-blue-light, 5%);
+
+      @media only screen and (min-width: 600px) {
+        border-top: none;
+      }
     }
 
     &-text {
@@ -21,9 +61,56 @@
       font-weight: 400;
       padding: $padding-sm 0;
     }
+
+    &:hover {
+      color: $color-soft-red;
+      cursor: pointer;
+    }
+  }
+
+  &__illustration-feature {
+    position: relative;
+    margin-bottom: 10rem;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 95%;
+      width: 80%;
+
+      position: absolute;
+      top: 18%;
+      left: 0;
+      background-color: $color-soft-blue;
+      border-bottom-right-radius: 40%;
+
+      z-index: -20;
+    }
+  }
+
+  &__illustration {
+    max-width: 80%;
   }
 
   &__text-box {
     margin-top: $margin-md;
   }
+}
+
+// Styles activated via JavaScript
+
+// Tab navigation styles
+[data-animation="nav-content"] {
+  display: none;
+  overflow: hidden;
+}
+.activeTabItem {
+  font-weight: 500;
+  border-bottom: $color-soft-red solid 3px;
+  transition: border-color 0.5s;
+}
+.activeTabContent {
+  display: flex;
+  justify-content: space-between;
+  animation: fadeInRight 0.5s;
 }

@@ -1,7 +1,10 @@
 .footer {
-  padding: $padding-md 0;
-  text-align: center;
   background-color: $color-dark-blue;
+  text-align: center;
+
+  &__container {
+    padding: $padding-md 0;
+  }
 
   &__navbar {
     margin-top: $margin-md;
@@ -20,5 +23,31 @@
     color: darken($color-white, 20%);
     text-transform: uppercase;
     letter-spacing: 0.3rem;
+    transition: all .3s;
+
+    &:hover {
+      color: $color-soft-red;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .footer {
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+
+      padding: $padding-sm 7.5vw;
+    }
+
+    &__navbar {
+      margin-top: 0;
+    }
+
+    &__menu {
+      display: flex;
+      padding-bottom: 0;
+    }
   }
 }

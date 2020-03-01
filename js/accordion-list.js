@@ -20,7 +20,7 @@ export default function initAccordionList() {
 
         // Function to activate click event
         function activeAccordionList(e, index) {
-            // Current and next element
+            // Current element
             const current = e.currentTarget;
 
             // Adding classes to the items that were clicked

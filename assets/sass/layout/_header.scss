@@ -3,8 +3,20 @@
   top: 0;
   left: 0;
   width: 100vw;
+  z-index: 1;
 
   padding: 3rem 2.5rem;
+
+  @media only screen and (min-width: 1000px) {
+    &__icon-mobile {
+      display: none;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    padding-right: 7.5vw;
+    padding-left: 7.5vw;
+  }
 
   &__container {
     display: flex;
@@ -41,4 +53,84 @@
       padding-bottom: $padding-md;
     }
   }
+
+  &__desktop {
+    display: none;
+
+    @media only screen and (min-width: 1000px) {
+      display: flex;
+    }
+
+    &-item {
+      padding: 1rem;
+      border: 0.2rem solid transparent;
+      transition: all 0.3s;
+
+      &:not(:last-child) {
+        margin-right: $margin-sm;
+      }
+
+      &:last-child {
+        background-color: $color-soft-red;
+        border-radius: 0.5rem;
+      }
+
+      &:hover > .header__desktop-link {
+        color: $color-soft-red;
+      }
+
+      &:last-child {
+        padding: 1rem 3rem;
+
+        &:hover {
+          background-color: $color-white;
+          border-color: $color-soft-red;
+          box-shadow: 0 0.1rem 0.5rem $color-grayish-blue;
+        }
+      }
+    }
+
+    &-link {
+      color: $color-dark-blue;
+      font-size: $font-size-sm;
+      text-transform: uppercase;
+      font-weight: 500;
+
+      &--login {
+        color: $color-white;
+      }
+    }
+  }
+}
+
+// Styles activated via JavaScript
+
+// Menu mobile styles
+[data-animation="menu-mobile"] {
+  display: none;
+}
+.activateMenuMobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+
+  animation: slideDown 0.3s ease-out;
+}
+
+// Header styles used in conjunction with menu-mobile
+.disableHeader {
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.activateHeader {
+  background-color: $color-white;
+  border-radius: 0 0 0.5rem 0.5rem;
+  box-shadow: 0 0.4rem 0.8rem darken($color-white, 30%);
+
+  transition: box-shadow 0.3s;
 }

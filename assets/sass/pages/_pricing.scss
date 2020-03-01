@@ -3,12 +3,72 @@
   padding-bottom: $padding-bottom-section;
   padding-top: $padding-top-section;
 
+  @media only screen and (min-width: 600px) {
+    &__content {
+      display: flex;
+      flex-wrap: wrap;
+
+      &-box {
+        padding-right: $padding-sm;
+        padding-left: $padding-sm;
+
+        &:first-child {
+          margin-right: 4%;
+          width: 46%;
+        }
+
+        &:nth-child(2) {
+          margin-left: 4%;
+          width: 46%;
+        }
+
+        &:nth-child(3) {
+          width: 50%;
+          margin-right: auto;
+          margin-left: auto;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    max-width: 900px;
+    margin: 0 auto;
+
+    .paragraph {
+      width: 445px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    &__content {
+      flex-wrap: nowrap;
+      margin-bottom: $margin-sm;
+
+      &-box {
+        &:not(:nth-child(3)) {
+          margin-right: 3rem;
+        }
+
+        &:nth-child(2) {
+          margin-left: 0;
+          transform: translateY(6rem);
+        }
+
+        &:nth-child(3) {
+          transform: translateY(12rem);
+        }
+      }
+    }
+  }
+
   &__content {
-      margin-top: $margin-md;
+    margin-top: $margin-md;
 
     &-box {
+      min-width: 31.5%;
       background-color: $color-white;
-      box-shadow: 0 .5rem 1rem darken($color-grayish-blue-light, 5%);
+      box-shadow: 0 0.5rem 1rem darken($color-grayish-blue-light, 5%);
       border-radius: 1.5rem;
       padding: $padding-md 0 2.5rem 0;
       margin-bottom: $margin-md;

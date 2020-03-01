@@ -1,9 +1,24 @@
 .section-contact {
   text-align: center;
   background-color: $color-soft-blue;
-  padding: $padding-lg 2.5rem;
 
   position: relative;
+
+  @media only screen and (min-width: 600px) {
+    &__container {
+      width: 85vw;
+      margin: 0 auto;
+    }
+
+    &__form {
+      display: flex;
+      align-items: flex-start;
+    }
+  }
+
+  &__container {
+    padding: $padding-lg 2.5rem;
+  }
 
   &__heading {
     color: $color-white;
@@ -23,8 +38,18 @@
 
     & > * {
       display: block;
-      margin: 0 auto;
+      margin-right: auto;
+      margin-left: auto;
       width: 100%;
+    }
+
+    &-container {
+      position: relative;
+
+      @media only screen and (min-width: 600px) {
+        width: 200%;
+        margin-right: $margin-sm;
+      }
     }
   }
 
@@ -38,7 +63,6 @@
     padding: 1.5rem;
     font-size: $font-size-default;
     font-family: inherit;
-
     &:focus {
       outline: none;
     }
@@ -51,17 +75,20 @@
   &__alert-text {
     display: none;
     opacity: 0;
+
     text-align: left;
     font-style: italic;
     letter-spacing: 0.1rem;
     font-size: $font-size-sm;
     color: $color-white;
     padding: 0.5rem 1.5rem;
-    margin-top: -$margin-sm;
-    margin-bottom: $margin-sm;
-
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
+
+    position: absolute;
+    top: 5.1rem;
+    left: 0;
+    width: 100%;
   }
 
   &__alert-icon {
@@ -69,11 +96,78 @@
     background-color: $color-white;
 
     position: absolute;
-    top: 50%;
+    top: 35%;
     right: 2rem;
     transform: translateY(-50%);
 
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
   }
+}
+
+@media only screen and (min-width: 1000px) {
+  .section-contact {
+    & .heading-secondary {
+      width: 65%;
+      margin: 0 auto;
+    }
+
+    &__container {
+      max-width: 600px;
+    }
+  }
+}
+
+// Styles activated via JavaScript
+
+// Extend styles
+%inputStates {
+  transition: border-color $transition-behavior-default;
+  margin-bottom: $margin-sm;
+}
+
+%alertTextStates {
+  display: block;
+  opacity: 1;
+  transition: $transition-behavior-default;
+}
+
+%alertIconState {
+  opacity: 1;
+  transition: opacity $transition-behavior-default;
+}
+
+// Input styles
+[data-animation="form-input"] {
+  border: 0.1rem solid transparent;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+}
+.invalidInput {
+  @extend %inputStates;
+  border-color: $color-soft-red;
+}
+.validInput {
+  @extend %inputStates;
+  border-color: $color-dark-blue;
+}
+
+// Text alert styles
+.invalidTextAlert {
+  @extend %alertTextStates;
+  background-color: $color-soft-red;
+}
+.validTextAlert {
+  @extend %alertTextStates;
+  background-color: $color-dark-blue;
+}
+
+// Icon alert styles
+.invalidIconAlert {
+  @extend %alertIconState;
+  color: $color-soft-red;
+}
+.validIconAlert {
+  @extend %alertIconState;
+  color: $color-dark-blue;
 }
