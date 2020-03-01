@@ -2,14 +2,20 @@
   text-align: center;
   padding-bottom: $padding-bottom-section;
 
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: 600px) {
     max-width: 600px;
     margin: 0 auto;
 
     .paragraph {
-      width: 445px;
+      max-width: 400px;
       margin-right: auto;
       margin-left: auto;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .paragraph {
+      max-width: 445px;
     }
   }
 

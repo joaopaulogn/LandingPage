@@ -4,6 +4,14 @@
   padding-top: $padding-top-section;
 
   @media only screen and (min-width: 600px) {
+    margin: 0 auto;
+
+    .paragraph {
+      width: 400px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
     &__content {
       display: flex;
       flex-wrap: wrap;
@@ -33,12 +41,9 @@
 
   @media only screen and (min-width: 1000px) {
     max-width: 900px;
-    margin: 0 auto;
 
     .paragraph {
       width: 445px;
-      margin-right: auto;
-      margin-left: auto;
     }
 
     &__content {

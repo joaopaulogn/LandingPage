@@ -5,7 +5,7 @@ export default function initNavTab() {
 
     // Checking if navContent, navItem exist
     if (navContent && navItem) {
-        // Classes to activate or desactivate events
+        // Constants for manipulation
         const classContent = 'activeTabContent';
         const classItem = 'activeTabItem';
 
