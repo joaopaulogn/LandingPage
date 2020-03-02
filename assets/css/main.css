@@ -79,12 +79,6 @@ body {
   margin: 2rem 0;
   line-height: 1.6; }
 
-.u-margin-right-sm {
-  margin-right: 1.2rem; }
-
-.u-margin-bottom-sm {
-  margin-bottom: 3rem; }
-
 .btn:link, .btn:visited {
   display: inline-block;
   font-size: 1.5rem;
@@ -92,53 +86,41 @@ body {
   border-radius: 0.5rem;
   padding: 1.5rem 0.9rem; }
 
-.btn--desactivated {
+.btn--disable {
   background-color: #f1f1f3;
   color: #666666;
   box-shadow: 0 0.4rem 0.8rem #9ea7cc;
-  border: .2rem solid transparent;
+  border: 0.2rem solid transparent;
   margin-top: 1.5rem;
-  transition: all .3s; }
-  .btn--desactivated:hover {
-    background-color: #fff;
-    border-color: #666666;
-    transform: translateY(-0.3rem); }
-  .btn--desactivated:active {
-    transform: translateY(0rem); }
+  transition: all 0.3s; }
 
-.btn--activated {
+.btn--active {
   background-color: #5368df;
   color: #fff;
   box-shadow: 0 0.4rem 0.8rem #b3b3b3;
-  border: .2rem solid transparent;
-  transition: all .3s; }
-  .btn--activated:not(:first-child) {
+  border: 0.2rem solid transparent;
+  transition: all 0.3s; }
+  .btn--active:not(:first-child) {
     padding-left: 3rem;
     padding-right: 3rem; }
-  .btn--activated:hover {
-    background-color: #fff;
-    border-color: #5368df;
-    color: #5368df;
-    transform: translateY(-0.3rem); }
-  .btn--activated:active {
-    transform: translateY(0rem); }
+  @media only screen and (min-width: 332px) {
+    .btn--active:first-child {
+      margin-bottom: 0;
+      margin-right: 1.2rem; } }
 
 .btn--form {
   border: none;
   padding: 1.5rem 1.3rem;
   border-radius: 0.5rem;
   font-family: inherit;
-  color: #fff;
-  font-size: 1.6rem; }
-
-.btn--sub {
+  font-size: 1.6rem;
   background-color: #fa5757;
   color: #e6e6e6;
-  border: .2rem solid transparent;
-  transition: all .3s; }
-  .btn--sub:focus {
+  border: 0.2rem solid transparent;
+  transition: all 0.3s; }
+  .btn--form:focus {
     outline: none; }
-  .btn--sub:hover {
+  .btn--form:hover {
     cursor: pointer;
     color: #fa5757;
     background-color: #fff;
@@ -154,21 +136,28 @@ body {
 .btn--pricing {
   padding: 1.5rem 3rem; }
 
-@media only screen and (min-width: 332px) {
-  .btn--activated:first-child {
-    margin-bottom: 0;
-    margin-right: 1.2rem; } }
+@media only screen and (min-width: 1000px) {
+  .btn--active:hover, .btn--disable:hover {
+    background-color: #fff;
+    transform: translateY(-0.3rem); }
+  .btn--active:active, .btn--disable:active {
+    transform: translateY(0rem); }
+  .btn--active:hover {
+    border-color: #5368df;
+    color: #5368df; }
+  .btn--disable:hover {
+    border-color: #666666; } }
 
 .logo--footer {
   fill: #fff; }
 
-.logo__mobile--text {
+.logo--mobile__text {
   fill: #fff; }
 
-.logo__mobile--icon {
+.logo--mobile__icon {
   fill: #252b46; }
 
-.logo__mobile--background {
+.logo--mobile__background {
   fill: #fff; }
 
 .social-menu {
@@ -306,7 +295,11 @@ body {
   padding: 3rem 2.5rem; }
   @media only screen and (min-width: 1000px) {
     .header__icon-mobile {
-      display: none; } }
+      display: none; }
+    .header__desktop-item:hover {
+      cursor: pointer; }
+      .header__desktop-item:hover > .header__desktop-link {
+        color: #fa5757; } }
   @media only screen and (min-width: 600px) {
     .header {
       padding-right: 7.5vw;
@@ -345,10 +338,6 @@ body {
       padding: 1rem;
       border: 0.2rem solid transparent;
       transition: all 0.3s; }
-      .header__desktop-item:hover {
-        cursor: pointer; }
-        .header__desktop-item:hover > .header__desktop-link {
-          color: #fa5757; }
       .header__desktop-item:not(:last-child) {
         margin-right: 2rem; }
       .header__desktop-item:last-child {
@@ -513,7 +502,10 @@ body {
     .section-features__text-box {
       width: 400px;
       margin-left: 0;
-      text-align: left; } }
+      text-align: left; }
+    .section-features__feature:hover {
+      color: #fa5757;
+      cursor: pointer; } }
   @media only screen and (min-width: 1440px) {
     .section-features {
       max-width: 70vw; } }
@@ -533,9 +525,6 @@ body {
       font-size: 1.6rem;
       font-weight: 400;
       padding: 2rem 0; }
-    .section-features__feature:hover {
-      color: #fa5757;
-      cursor: pointer; }
   .section-features__illustration-feature {
     position: relative;
     margin-bottom: 10rem; }

@@ -1,18 +1,19 @@
+// Manipulation of icons in SVG
 .logo {
   &--footer {
     fill: $color-white;
   }
 
-  &__mobile {
-    &--text {
+  &--mobile {
+    &__text {
       fill: $color-white;
     }
 
-    &--icon {
+    &__icon {
       fill: $color-dark-blue;
     }
 
-    &--background {
+    &__background {
       fill: $color-white;
     }
   }

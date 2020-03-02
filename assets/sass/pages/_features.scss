@@ -39,6 +39,13 @@
       margin-left: 0;
       text-align: left;
     }
+
+    &__feature {
+      &:hover {
+        color: $color-soft-red;
+        cursor: pointer;
+      }
+    }
   }
 
   @media only screen and (min-width: $breakpoint-xlg) {
@@ -67,11 +74,6 @@
       font-size: $font-size-default;
       font-weight: 400;
       padding: $padding-sm 0;
-    }
-
-    &:hover {
-      color: $color-soft-red;
-      cursor: pointer;
     }
   }
 
@@ -160,7 +162,7 @@
   }
 }
 
-// Styles activated via JavaScript
+// Styles activated by JavaScript
 
 // Tab navigation styles
 [data-animation="nav-content"] {

@@ -8,11 +8,15 @@
   "license": "MIT",
   "scripts": {
     "compile:sass": "node-sass assets/sass/main.scss assets/css/main.css",
-    "watch:sass": "nodemon -e scss -x \"npm run compile:sass\""
+    "watch:sass": "nodemon -e scss -x \"npm run compile:sass\"",
+    "minify-css": "postcss assets/css/main.css > assets/css/main.min.css"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "autoprefixer-core": "^6.0.1",
+    "cssnano": "^4.1.10",
     "node-sass": "^4.13.1",
     "nodemon": "^2.0.2",
-    "@fortawesome/fontawesome-free": "^5.12.1"
+    "postcss-cli": "^7.1.0"
   }
 }

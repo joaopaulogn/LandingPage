@@ -11,6 +11,18 @@
     &__icon-mobile {
       display: none;
     }
+
+    &__desktop {
+      &-item {
+        &:hover {
+          cursor: pointer;
+          
+          & > .header__desktop-link {
+            color: $color-soft-red;
+          }
+        }
+      }
+    }
   }
 
   @media only screen and (min-width: $breakpoint-md) {
@@ -66,14 +78,6 @@
       border: 0.2rem solid transparent;
       transition: all 0.3s;
 
-      &:hover {
-        cursor: pointer;
-        
-        & > .header__desktop-link {
-          color: $color-soft-red;
-        }
-      }
-
       &:not(:last-child) {
         margin-right: $margin-sm;
       }
@@ -107,7 +111,7 @@
   }
 }
 
-// Styles activated via JavaScript
+// Styles activated by JavaScript
 
 // Menu mobile styles
 [data-animation="menu-mobile"] {

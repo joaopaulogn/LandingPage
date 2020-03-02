@@ -12,3 +12,12 @@
     color: darken($color-white, 50%);
   }
 }
+
+@mixin btnState($state) {
+  @if ($state == hover) {
+    background-color: $color-white;
+    transform: translateY(-0.3rem);
+  } @else if($state == active) {
+    transform: translateY(0rem);
+  }
+}
