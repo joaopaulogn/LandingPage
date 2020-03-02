@@ -3,7 +3,7 @@
   padding-bottom: $padding-bottom-section;
   padding-top: $padding-top-section;
 
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: $breakpoint-md) {
     margin: 0 auto;
 
     .paragraph {
@@ -39,7 +39,7 @@
     }
   }
 
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: $breakpoint-lg) {
     max-width: 900px;
 
     .paragraph {

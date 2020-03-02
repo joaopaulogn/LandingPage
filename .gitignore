@@ -1,1 +1,3 @@
-node_modules/
+node_modules/*
+!node_modules/@fortawesome/css/all.min.css
+!node_modules/@fortawesome/webfonts/

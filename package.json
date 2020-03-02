@@ -12,9 +12,7 @@
   },
   "devDependencies": {
     "node-sass": "^4.13.1",
-    "nodemon": "^2.0.2"
-  },
-  "dependencies": {
+    "nodemon": "^2.0.2",
     "@fortawesome/fontawesome-free": "^5.12.1"
   }
 }

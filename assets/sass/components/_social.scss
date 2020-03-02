@@ -6,4 +6,12 @@
   &__item {
     padding: 0 $padding-sm;
   }
+
+  &__icon {
+    transition: all .3s;
+    
+    &:hover {
+      fill: $color-soft-red;
+    }
+  }
 }

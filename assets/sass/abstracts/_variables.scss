@@ -10,25 +10,31 @@ $color-black: #000;
 // FONTS
 $font-family-default: "Rubik", sans-serif;
 
-$font-size-h1: 3rem;
-$font-size-h2: 2.5rem;
-$font-size-h3: 2rem;
-$font-size-btn: 1.5rem;
-$font-size-default: 1.6rem;
-$font-size-sm: 1.3rem;
-$font-size-md: 1.8rem;
+$font-size-h1: 3rem; // 30px
+$font-size-h2: 2.5rem; // 25px
+$font-size-h3: 2rem; //20px
+$font-size-btn: 1.5rem; // 15px
+$font-size-default: 1.6rem; // 16px
+$font-size-sm: 1.3rem; // 13px
 
 // LENGHTS
-$padding-bottom-section: 15rem;
-$padding-top-section: 5rem;
+$padding-bottom-section: 15rem; // 150px
+$padding-top-section: 5rem; // 50px
 
-$padding-sm: 2rem;
-$padding-md: 4rem;
-$padding-lg: 6rem;
+$padding-sm: 2rem; // 20px
+$padding-md: 4rem; // 40px
+$padding-lg: 6rem; // 60px
 
-$margin-sm: 2rem;
-$margin-md: 4rem;
-$margin-lg: 6rem;
+$margin-sm: 2rem; // 20px
+$margin-md: 4rem; // 40px
+$margin-lg: 6rem; // 60px
 
 // Transition
 $transition-behavior-default: 0.3s ease-in-out;
+$transition-hover-btn: all 0.3s;
+
+// Breakpoints
+$breakpoint-sm: 332px; // 332px
+$breakpoint-md: 600px; // 600px
+$breakpoint-lg: 1000px; // 1000px
+$breakpoint-xlg: 1440px; // 1440px

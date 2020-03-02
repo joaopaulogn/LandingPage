@@ -2,7 +2,7 @@
   text-align: center;
   padding-bottom: $padding-bottom-section;
 
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: $breakpoint-md) {
     max-width: 600px;
     margin: 0 auto;
 
@@ -13,7 +13,7 @@
     }
   }
 
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: $breakpoint-lg) {
     .paragraph {
       max-width: 445px;
     }

@@ -4,7 +4,7 @@
 
   position: relative;
 
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: $breakpoint-md) {
     &__container {
       width: 85vw;
       margin: 0 auto;
@@ -46,7 +46,7 @@
     &-container {
       position: relative;
 
-      @media only screen and (min-width: 600px) {
+      @media only screen and (min-width: $breakpoint-md) {
         width: 200%;
         margin-right: $margin-sm;
       }
@@ -92,7 +92,7 @@
   }
 
   &__alert-icon {
-    font-size: $font-size-md;
+    font-size: 1.8rem;
     background-color: $color-white;
 
     position: absolute;
@@ -105,7 +105,7 @@
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: $breakpoint-lg) {
   .section-contact {
     & .heading-secondary {
       width: 65%;

@@ -3,7 +3,7 @@
   padding-bottom: $padding-bottom-section;
   padding-top: 8rem;
 
-  @media only screen and (min-width: 600) {
+  @media only screen and (min-width: $breakpoint-md) {
     .paragraph {
       max-width: 400px;
       margin-left: auto;
@@ -11,7 +11,7 @@
     }
   }
 
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: $breakpoint-lg) {
     padding-right: 2vw;
     padding-left: 7.5vw;
     text-align: left;
@@ -22,6 +22,8 @@
 
     .paragraph {
       max-width: 440px;
+      margin-left: 0;
+      margin-right: 0;
     }
 
     &__container {
@@ -40,26 +42,41 @@
     }
   }
 
-  &__hero-box {
-    margin-bottom: 6rem;
+  @media only screen and (min-width: $breakpoint-xlg) {
+    .heading-primary {
+      max-width: 100%;
+    }
 
-    // &::before {
-    //   content: "";
-    //   display: block;
+    .paragraph {
+      max-width: 80%;
+    }
 
-    //   position: absolute;
-    //   top: 37%;
-    //   right: 0%;
-    //   height: 45vh;
-    //   width: 35vw;
-    //   background-color: $color-soft-blue;
-    //   border-bottom-left-radius: 40%;
-
-    //   z-index: -20;
-    // }
+    &__content {
+      margin-right: 0;
+    }
   }
 
-  &__btn-box {
-    margin-top: 3rem;
+  &__hero-box {
+    margin-bottom: 6rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+
+      position: absolute;
+      top: 25%;
+      right: -2.5rem;
+      height: 75%;
+      width: 80%;
+      background-color: $color-soft-blue;
+      border-bottom-left-radius: 40%;
+
+      z-index: -1;
+
+      @media only screen and (min-width: $breakpoint-lg) {
+        right: calc(-2.5rem - 2vw);
+      }
+    }
   }
 }
