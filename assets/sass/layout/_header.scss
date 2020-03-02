@@ -66,8 +66,12 @@
       border: 0.2rem solid transparent;
       transition: all 0.3s;
 
-      &:hover > .header__desktop-link {
-        color: $color-soft-red;
+      &:hover {
+        cursor: pointer;
+        
+        & > .header__desktop-link {
+          color: $color-soft-red;
+        }
       }
 
       &:not(:last-child) {

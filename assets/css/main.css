@@ -345,8 +345,10 @@ body {
       padding: 1rem;
       border: 0.2rem solid transparent;
       transition: all 0.3s; }
-      .header__desktop-item:hover > .header__desktop-link {
-        color: #fa5757; }
+      .header__desktop-item:hover {
+        cursor: pointer; }
+        .header__desktop-item:hover > .header__desktop-link {
+          color: #fa5757; }
       .header__desktop-item:not(:last-child) {
         margin-right: 2rem; }
       .header__desktop-item:last-child {
@@ -580,7 +582,7 @@ body {
           width: 75%; } }
       @media only screen and (min-width: 1440px) {
         .section-features__illustration-feature--third::before {
-          width: 120%;
+          width: 115%;
           border-bottom-right-radius: 25%; } }
   .section-features__illustration {
     max-width: 80%; }

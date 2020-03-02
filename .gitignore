@@ -1,3 +1,2 @@
+# This ignore all the folders and files inside node_modules folder
 node_modules/*
-!node_modules/@fortawesome/css/all.min.css
-!node_modules/@fortawesome/webfonts/
