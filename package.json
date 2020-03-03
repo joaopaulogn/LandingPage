@@ -5,7 +5,16 @@
   "main": "index.js",
   "repository": "https://github.com/joaopaulogn/frontend-mentor-landing-page.git",
   "author": "João Paulo Gonçalves Neto",
-  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/joaopaulogn/frontend-mentor-landing-page/blob/master/LICENSE"
+    },
+    {
+      "type": "Apache-2.0",
+      "url": "https://github.com/joaopaulogn/frontend-mentor-landing-page/blob/master/LICENSE"
+    }
+  ],
   "scripts": {
     "compile:sass": "node-sass assets/sass/main.scss assets/css/main.css",
     "watch:sass": "nodemon -e scss -x \"npm run compile:sass\"",
@@ -13,7 +22,6 @@
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.12.1",
-    "autoprefixer-core": "^6.0.1",
     "cssnano": "^4.1.10",
     "node-sass": "^4.13.1",
     "nodemon": "^2.0.2",

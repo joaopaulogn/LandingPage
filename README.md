@@ -49,8 +49,8 @@ To view the project recreated by me, visit: https://bookmarking-landing-page.now
 
 2. Open the project and run
 
-   1. With npm `$ npm install`
-   2. With yarn `$ yarn`
+   - With npm `$ npm install`
+   - With yarn `$ yarn`
 
 3. Open it in your browser
 

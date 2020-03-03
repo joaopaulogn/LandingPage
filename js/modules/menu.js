@@ -32,4 +32,3 @@ export default function initMenuMobile() {
     // Event to disable
     btnClose.addEventListener('click', disableMenuMobile);
 }
-initMenuMobile();

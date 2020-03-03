@@ -7,4 +7,3 @@ export default function initScroll() {
     }
     window.addEventListener('scroll', activateScroll);
 }
-initScroll();
