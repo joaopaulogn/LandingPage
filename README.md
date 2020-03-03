@@ -10,14 +10,13 @@
 
 ## Mobile version preview
 
-<img src="C:\Users\joaop\Documents\Projects\Landing page - Front-end mentor\challenge\images\mobile.gif" alt="Mobile-first" style="zoom: 50%;" /><img src="C:\Users\joaop\Documents\Projects\Landing page - Front-end mentor\challenge\images\menu.gif" alt="Mobile-menu" style="zoom:50%;" />
-
+![Mobile first](challenge/images/mobile.gif)![Mobile menu](challenge/images/menu.gif)
 
 
 
 ## Desktop version preview
 
-<img src="C:\Users\joaop\Documents\Projects\Landing page - Front-end mentor\challenge\images\scroll.gif" alt="Scroll through the page" style="zoom:50%;" /><img src="C:\Users\joaop\Documents\Projects\Landing page - Front-end mentor\challenge\images\home.gif" alt="Home section" style="zoom:50%;" /><img src="C:\Users\joaop\Documents\Projects\Landing page - Front-end mentor\challenge\images\features.gif" alt="Features section" style="zoom:50%;" /><img src="C:\Users\joaop\Documents\Projects\Landing page - Front-end mentor\challenge\images\pricing.gif" alt="Pricing section" style="zoom:50%;" /><img src="C:\Users\joaop\Documents\Projects\Landing page - Front-end mentor\challenge\images\faq.gif" alt="FAQ Section" style="zoom:50%;" /><img src="C:\Users\joaop\Documents\Projects\Landing page - Front-end mentor\challenge\images\form.gif" alt="Form validation" style="zoom:50%;" />
+![Scroll through the page](challenge/images/scroll.gif)![Home section](challenge/images/home.gif)![Features section](challenge/images/features.gif)![Pricing section](challenge/images/pricing.gif)![FAQ Section](challenge/images/faq.gif)![Form validation](challenge/images/form.gif)
 
 
 
@@ -46,13 +45,14 @@ To view the project recreated by me, visit: https://bookmarking-landing-page.now
 
 ## Installation
 
-1. Clone this repository to your machine.
+1. Clone this repository to your machine
 
-2. With npm run `$ npm install`
+2. Open the project and run
 
-3. With yarn run `$ yarn`
+   1. With npm `$ npm install`
+   2. With yarn `$ yarn`
 
-4. Open it in your browser
+3. Open it in your browser
 
    
 
