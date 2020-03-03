@@ -64,4 +64,4 @@ To view the project recreated by me, visit: https://bookmarking-landing-page.now
 
 ## License
 
-All the code available under the MIT + Apache 2.0. licenses. See [LICENSE](https://github.com/scitbiz/flutter_pokedex/blob/master/LICENSE).
+All the code available under the MIT + Apache 2.0. licenses. See [LICENSE](https://github.com/joaopaulogn/frontend-mentor-landing-page/blob/master/LICENSE).
