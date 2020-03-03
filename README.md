@@ -1,6 +1,6 @@
 # Frontend Mentor - Bookmark landing page
 
-[![License](https://img.shields.io/badge/ZEIT-passed-brightgreen)](ZEIT)[![License](https://img.shields.io/badge/License-Apache%202.0-red.svg)](LICENSE)[![License](https://img.shields.io/badge/License-MIT-red.svg)](LICENSE)
+[![License](https://img.shields.io/badge/ZEIT-passed-brightgreen)](ZEIT) [![License](https://img.shields.io/badge/License-Apache%202.0-red.svg)](LICENSE) [![License](https://img.shields.io/badge/License-MIT-red.svg)](LICENSE)
 
 
 
