@@ -3,7 +3,7 @@
   &:link,
   &:visited {
     display: inline-block;
-    font-size: $font-size-btn;
+    font-size: $font-size-sm;
     font-weight: 500;
     border-radius: 0.5rem;
     padding: 1.5rem 0.9rem;
@@ -40,11 +40,7 @@
   }
 
   &--form {
-    border: none;
-    padding: 1.5rem 1.3rem;
-    border-radius: 0.5rem;
-    font-family: inherit;
-    font-size: $font-size-default;
+    @include btnDefaultStyle(button);
     background-color: $color-soft-red;
     color: darken($color-white, 10%);
     border: 0.2rem solid transparent;
@@ -63,9 +59,13 @@
   }
 
   &--login {
+    @include btnDefaultStyle(link);
+    color: darken($color-white, 10%);
     background-color: transparent;
     border: 0.1rem solid $color-white;
+
     width: 100%;
+    margin-top: $margin-sm;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
   }

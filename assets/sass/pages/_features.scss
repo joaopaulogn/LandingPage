@@ -27,7 +27,7 @@
 
   @media only screen and (min-width: $breakpoint-lg) {
     & > .paragraph {
-      width: 445px;
+      width: 480px;
     }
 
     &__content {
@@ -35,9 +35,14 @@
     }
 
     &__text-box {
-      width: 400px;
+      width: 390px;
       margin-left: 0;
       text-align: left;
+
+      & > .paragraph {
+        width: 100%;
+        padding: 0;
+      }
     }
 
     &__feature {
@@ -109,7 +114,6 @@
           border-bottom-right-radius: 25%;
         }
       }
-
     }
 
     &--second {
@@ -157,7 +161,7 @@
     margin-top: $margin-md;
 
     & .btn {
-      padding: 1rem;
+      padding: 1rem 1.5rem;
     }
   }
 }

@@ -3,7 +3,7 @@
   padding-bottom: $padding-bottom-section;
 
   @media only screen and (min-width: $breakpoint-md) {
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
 
     .paragraph {
@@ -15,7 +15,7 @@
 
   @media only screen and (min-width: $breakpoint-lg) {
     .paragraph {
-      max-width: 445px;
+      max-width: 450px;
     }
   }
 
@@ -51,7 +51,7 @@
   &__answer {
     font-size: $font-size-default;
     line-height: 2;
-    margin: 1.5rem 0 $margin-sm 0;
+    margin: $margin-sm 0;
     color: darken($color-white, 50%);
   }
 }

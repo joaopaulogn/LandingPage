@@ -3,7 +3,7 @@ export default function initNavTab() {
     const navItem = document.querySelectorAll('[data-animation="nav-item"]');
     const navContent = document.querySelectorAll('[data-animation="nav-content"]');
 
-    // Checking if navContent, navItem exist
+    // Checking if navContent and navItem exist
     if (navContent && navItem) {
         // Constants for manipulation
         const classContent = 'activeTabContent';
@@ -12,6 +12,7 @@ export default function initNavTab() {
         // Adding classes for first item and content
         navContent[0].classList.add(classContent);
         navItem[0].firstElementChild.classList.add(classItem);
+
 
         // Function to activate click event
         function activeTab(index) {
@@ -27,6 +28,7 @@ export default function initNavTab() {
             // Adding classes to the item and content that was clicked
             navContent[index].classList.add(classContent);
             navItem[index].firstElementChild.classList.add(classItem);
+
         }
 
         // Event
