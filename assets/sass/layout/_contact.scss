@@ -6,13 +6,24 @@
 
   @media only screen and (min-width: $breakpoint-md) {
     &__container {
-      width: 85vw;
+      max-width: 85vw;
       margin: 0 auto;
     }
 
     &__form {
       display: flex;
       align-items: flex-start;
+    }
+  }
+
+  @media only screen and (min-width: $breakpoint-lg) {
+    & .heading-secondary {
+      width: 65%;
+      margin: 0 auto;
+    }
+
+    &__container {
+      max-width: 600px;
     }
   }
 
@@ -102,19 +113,6 @@
 
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-  }
-}
-
-@media only screen and (min-width: $breakpoint-lg) {
-  .section-contact {
-    & .heading-secondary {
-      width: 65%;
-      margin: 0 auto;
-    }
-
-    &__container {
-      max-width: 600px;
-    }
   }
 }
 

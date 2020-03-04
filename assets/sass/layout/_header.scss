@@ -137,8 +137,7 @@
 }
 .activateHeader {
   background-color: $color-white;
-  border-radius: 0 0 0.5rem 0.5rem;
   box-shadow: 0 0.2rem 0.6rem darken($color-white, 30%);
 
-  transition: box-shadow 0.3s;
+  transition: box-shadow .5s;
 }

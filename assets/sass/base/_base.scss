@@ -29,3 +29,8 @@ a {
 li {
   list-style-type: none;
 }
+
+// Styles activated by JavaScript
+.disableScroll {
+  overflow: hidden;
+}

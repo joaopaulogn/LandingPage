@@ -9,6 +9,7 @@ export default function initMenuMobile() {
     // Classes to activate or desactivate events
     const classDisableHeader = 'disableHeader';
     const classActivateMenu = 'activateMenuMobile';
+    const classDisableScroll = 'disableScroll';
 
     // Activate function
     function activateMenuMobile(e) {
@@ -16,6 +17,7 @@ export default function initMenuMobile() {
 
         header.classList.add(classDisableHeader);
         menuMobile.classList.add(classActivateMenu);
+        document.documentElement.classList.add(classDisableScroll);
     };
 
     // Event to activate
@@ -27,6 +29,7 @@ export default function initMenuMobile() {
     function disableMenuMobile() {
         header.classList.remove(classDisableHeader);
         menuMobile.classList.remove(classActivateMenu);
+        document.documentElement.removeAttribute('class');
     }
 
     // Event to disable

@@ -11,8 +11,11 @@ export default function initNavTab() {
 
         // Adding classes for first item and content
         navContent[0].classList.add(classContent);
-        navItem[0].firstElementChild.classList.add(classItem);
 
+        // Condition if viewport width is less than or equal to 600px
+        window.innerWidth <= 600
+            ? navItem[0].firstElementChild.classList.add(classItem)
+            : navItem[0].classList.add(classItem);
 
         // Function to activate click event
         function activeTab(index) {
@@ -21,14 +24,25 @@ export default function initNavTab() {
                 item.classList.remove(classContent);
             });
 
-            navItem.forEach((item) => {
-                item.firstElementChild.classList.remove(classItem);
-            });
+            // Condition if viewport width is less than or equal to 600px
+            if (window.innerWidth <= 600) {
+                navItem.forEach((item) => {
+                    item.firstElementChild.classList.remove(classItem);
+                });
+            } else {
+                navItem.forEach((item) => {
+                    item.classList.remove(classItem);
+                });
+            }
+
 
             // Adding classes to the item and content that was clicked
             navContent[index].classList.add(classContent);
-            navItem[index].firstElementChild.classList.add(classItem);
 
+            // Condition if viewport width is less than or equal to 600px
+            window.innerWidth <= 600
+                ? navItem[index].firstElementChild.classList.add(classItem)
+                : navItem[index].classList.add(classItem);
         }
 
         // Event

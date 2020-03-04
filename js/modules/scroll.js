@@ -1,9 +1,11 @@
 export default function initScroll() {
     const header = document.querySelector('[data-animation="header"]');
     const classActivateHeader = 'activateHeader';
-    
+
     function activateScroll() {
-        header.classList.add(classActivateHeader);
+        window.pageYOffset > 0
+            ? header.classList.add(classActivateHeader)
+            : header.classList.remove(classActivateHeader);
     }
-    window.addEventListener('scroll', activateScroll);
+    window.onscroll = activateScroll;
 }

@@ -24,6 +24,7 @@ export default function initTabLinks() {
 
                 menuMobile.classList.remove(classActivateMenu);
                 header.classList.remove(classDisableHeader);
+                document.documentElement.removeAttribute('class');
             }
 
             window.scrollTo({
