@@ -24,17 +24,10 @@ export default function initNavTab() {
                 item.classList.remove(classContent);
             });
 
-            // Condition if viewport width is less than or equal to 600px
-            if (window.innerWidth <= 600) {
-                navItem.forEach((item) => {
-                    item.firstElementChild.classList.remove(classItem);
-                });
-            } else {
-                navItem.forEach((item) => {
-                    item.classList.remove(classItem);
-                });
-            }
-
+            navItem.forEach((item) => {
+                item.classList.remove(classItem);
+                item.firstElementChild.classList.remove(classItem);
+            });
 
             // Adding classes to the item and content that was clicked
             navContent[index].classList.add(classContent);
