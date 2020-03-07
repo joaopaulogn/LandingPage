@@ -1,37 +1,35 @@
+// Importing constants
+import * as cons from './constants.js';
+
 // Menu mobile
 export default function initMenuMobile() {
     // Constants for DOM Manipulation
-    const iconMobile = document.querySelector('[data-animation="icon-mobile"]');
-    const menuMobile = document.querySelector('[data-animation="menu-mobile"]');
-    const btnClose = document.querySelector('[data-animation="btn-close"]');
-    const header = document.querySelector('[data-animation="header"]');
+    const btnMenuOpen = document.querySelector('[data-animation="btn-menu-open"]');
+    const btnMenuClose = document.querySelector('[data-animation="btn-menu-close"]');
 
     // Classes to activate or desactivate events
-    const classDisableHeader = 'disableHeader';
-    const classActivateMenu = 'activateMenuMobile';
-    const classDisableScroll = 'disableScroll';
+    const classScroll = 'disableScroll';
 
-    // Activate function
-    function activateMenuMobile(e) {
-        e.preventDefault();
+    // Function to activate
+    function activeMenuMobile(event) {
+        event.preventDefault();
 
-        header.classList.add(classDisableHeader);
-        menuMobile.classList.add(classActivateMenu);
-        document.documentElement.classList.add(classDisableScroll);
+        cons.header.classList.add(cons.classHeader);
+        cons.menuMobile.classList.add(cons.classMenuMobile);
+        document.documentElement.classList.add(classScroll);
     };
 
-    // Event to activate
-    iconMobile.addEventListener('click', (e) => {
-        activateMenuMobile(e);
-    })
+    // Function to disable
+    function disableMenuMobile(event) {
+        event.preventDefault();
 
-    // Disable function
-    function disableMenuMobile() {
-        header.classList.remove(classDisableHeader);
-        menuMobile.classList.remove(classActivateMenu);
-        document.documentElement.removeAttribute('class');
+        cons.header.classList.remove(cons.classHeader);
+        cons.menuMobile.classList.remove(cons.classMenuMobile);
+        document.documentElement.classList.remove(classScroll);
     }
 
+    // Event to activate
+    btnMenuOpen.addEventListener('click', activeMenuMobile);
     // Event to disable
-    btnClose.addEventListener('click', disableMenuMobile);
+    btnMenuClose.addEventListener('click', disableMenuMobile);
 }

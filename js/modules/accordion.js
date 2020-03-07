@@ -1,39 +1,35 @@
 export default function initAccordionList() {
     // Constants for DOM manipulation
     const accordionTerm = document.querySelectorAll('[data-animation="accordionTerm"]');
-    const accordionState = document.querySelectorAll('[data-animation="svg-arrow"]');
 
     // Checking if accordionTerm and accordionState exist
-    if (accordionTerm && accordionState) {
+    if (accordionTerm) {
         // Classes to activate or desactivate events
-        const classAccordionAnswer = 'activeAccordionAnswer';
-        const classAccordionTerm = 'activeAccordionTerm';
-        const classAccordionState = 'activeAccordionState'
+        const classAnswer = 'activeAnswer';
+        const classTerm = 'activeTerm';
+        const classState = 'activeState'
 
         // Adding classes for the first items on load page
         const firstTerm = accordionTerm[0];
-        const firstState = accordionState[0];
 
-        firstTerm.classList.add(classAccordionTerm);
-        firstTerm.nextElementSibling.classList.add(classAccordionAnswer);
-        firstState.classList.add(classAccordionState);
+        firstTerm.classList.add(classTerm);
+        firstTerm.nextElementSibling.classList.add(classAnswer);
+        firstTerm.lastElementChild.classList.add(classState);
 
         // Function to activate click event
-        function activeAccordionList(e, index) {
+        function activeAccordionList(event) {
             // Current element
-            const current = e.currentTarget;
+            const current = event.currentTarget;
 
             // Adding classes to the items that were clicked
-            accordionState[index].classList.toggle(classAccordionState);
-            current.classList.toggle(classAccordionTerm);
-            current.nextElementSibling.classList.toggle(classAccordionAnswer);
+            current.classList.toggle(classTerm);
+            current.nextElementSibling.classList.toggle(classAnswer);
+            current.lastElementChild.classList.toggle(classState);
         }
 
         // Event
-        accordionTerm.forEach((item, index) => {
-            item.addEventListener('click', (e) => {
-                activeAccordionList(e, index);
-            });
+        accordionTerm.forEach((item) => {
+            item.addEventListener('click', activeAccordionList);
         });
     }
 }

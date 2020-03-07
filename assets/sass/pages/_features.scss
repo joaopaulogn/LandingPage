@@ -3,60 +3,6 @@
   padding-bottom: $padding-bottom-section;
   padding-top: $padding-top-section;
 
-  @media only screen and (min-width: $breakpoint-md) {
-    margin-right: auto;
-    margin-left: auto;
-
-    .paragraph {
-      width: 400px;
-      margin-right: auto;
-      margin-left: auto;
-    }
-
-    &__feature-box {
-      display: flex;
-      justify-content: center;
-    }
-
-    &__text-box {
-      width: 65vw;
-      margin-right: auto;
-      margin-left: auto;
-    }
-  }
-
-  @media only screen and (min-width: $breakpoint-lg) {
-    & > .paragraph {
-      width: 480px;
-    }
-
-    &__content {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    &__text-box {
-      width: 390px;
-      margin-left: 0;
-      text-align: left;
-
-      & > .paragraph {
-        width: 100%;
-        padding: 0;
-      }
-    }
-
-    &__feature {
-      &:hover {
-        color: $color-soft-red;
-        cursor: pointer;
-      }
-    }
-  }
-
-  @media only screen and (min-width: $breakpoint-xlg) {
-    max-width: 70vw;
-  }
-
   &__feature-box {
     margin-bottom: $margin-lg;
     margin-top: $margin-md;
@@ -163,6 +109,60 @@
     & .btn {
       padding: 1rem 1.5rem;
     }
+  }
+
+  @media only screen and (min-width: $breakpoint-md) {
+    margin-right: auto;
+    margin-left: auto;
+
+    .paragraph {
+      width: 400px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    &__feature-box {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__text-box {
+      width: 65vw;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  @media only screen and (min-width: $breakpoint-lg) {
+    & > .paragraph {
+      width: 480px;
+    }
+
+    &__content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__text-box {
+      width: 390px;
+      margin-left: 0;
+      text-align: left;
+
+      & > .paragraph {
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+    &__feature {
+      &:hover {
+        color: $color-soft-red;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media only screen and (min-width: $breakpoint-xlg) {
+    max-width: 70vw;
   }
 }
 

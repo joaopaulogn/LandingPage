@@ -4,7 +4,11 @@
 
 
 
-![Design preview for the Bookmark landing page coding challenge](challenge/images/desktop-preview.jpg)
+![Desktop design preview for the Bookmark landing page coding challenge](challenge/images/desktop-preview.jpg)
+
+
+
+![Mobile design preview for the Bookmark landing page coding challenge](challenge/images/mobile-preview.jpg)
 
 
 

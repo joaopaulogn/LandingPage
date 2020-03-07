@@ -5,6 +5,7 @@ import initValidationForm from './modules/form.js';
 import initAccordionList from './modules/accordion.js';
 import initTabNav from './modules/tab-navigation.js';
 import initMenuMobile from './modules/menu.js';
+import initTooltip from './modules/tooltip.js';
 
 // Functions
 initScroll();
@@ -13,3 +14,4 @@ initTabLinks();
 initTabNav();
 initAccordionList();
 initValidationForm();
+initTooltip();

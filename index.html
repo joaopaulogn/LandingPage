@@ -32,7 +32,7 @@
 
             <nav class="header__navbar">
                 <!-- Icon to activate - open - the mobile menu -->
-                <a href="" class="header__icon-mobile" data-animation="icon-mobile">
+                <a href="" class="header__btn-open" data-animation="btn-menu-open">
                     <img src="assets/images/icon-hamburger.svg" alt="Menu" class="header__menu-icon">
                 </a>
 
@@ -76,11 +76,12 @@
                 </a>
 
                 <!-- Icon to desactivate - close - the mobile menu -->
-                <svg class="menu-close" xmlns="http://www.w3.org/2000/svg" width="16" height="15"
-                    data-animation="btn-close">
-                    <path fill="#FFF" fill-rule="evenodd"
-                        d="M8 5.379L13.303.075l2.122 2.122L10.12 7.5l5.304 5.303-2.122 2.122L8 9.62l-5.303 5.304-2.122-2.122L5.88 7.5.575 2.197 2.697.075 8 5.38z" />
-                </svg>
+                <a href="" class="header__btn-close" data-animation="btn-menu-close">
+                    <svg class="btn-close" xmlns="http://www.w3.org/2000/svg" width="16" height="15">
+                        <path fill="#FFF" fill-rule="evenodd"
+                            d="M8 5.379L13.303.075l2.122 2.122L10.12 7.5l5.304 5.303-2.122 2.122L8 9.62l-5.303 5.304-2.122-2.122L5.88 7.5.575 2.197 2.697.075 8 5.38z" />
+                    </svg>
+                </a>
             </div>
 
             <ul class="header__mobile-menu">
@@ -93,8 +94,8 @@
                 <li class="header__item">
                     <a href="#contact" class="header__link mobile-link" data-animation="internal-links">Contact</a>
                 </li>
-                <button class="btn btn--login">Login</button>
             </ul>
+            <button class="btn btn--login">Login</button>
         </div>
 
         <ul class="social-menu">
@@ -274,8 +275,7 @@
                 <dt class="section-faq__question" data-animation="accordionTerm">
                     <span class="section-faq__question-text">What is Bookmark?</span>
                     <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="12">
-                        <path class="arrow--down" fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"
-                            data-animation="svg-arrow" />
+                        <path class="arrow--down" fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" />
                     </svg>
                 </dt>
                 <dd class="section-faq__answer" data-animation="accordionAnswer">
@@ -286,8 +286,7 @@
                 <dt class="section-faq__question" data-animation="accordionTerm">
                     <span class="section-faq__question-text">How can I request a new browser?</span>
                     <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="12">
-                        <path class="arrow--down" fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"
-                            data-animation="svg-arrow" />
+                        <path class="arrow--down" fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" />
                     </svg>
                 </dt>
                 <dd class="section-faq__answer" data-animation="accordionAnswer">
@@ -301,8 +300,7 @@
                 <dt class="section-faq__question" data-animation="accordionTerm">
                     <span class="section-faq__question-text">Is there a mobile app?</span>
                     <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="12">
-                        <path class="arrow--down" fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"
-                            data-animation="svg-arrow" />
+                        <path class="arrow--down" fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" />
                     </svg>
                 </dt>
                 <dd class="section-faq__answer" data-animation="accordionAnswer">
@@ -315,8 +313,7 @@
                 <dt class="section-faq__question" data-animation="accordionTerm">
                     <span class="section-faq__question-text">What about other Chromium browsers?</span>
                     <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="12">
-                        <path class="arrow--down" fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"
-                            data-animation="svg-arrow" />
+                        <path class="arrow--down" fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" />
                     </svg>
                 </dt>
                 <dd class="section-faq__answer" data-animation="accordionAnswer">
@@ -337,10 +334,10 @@
             <form class="section-contact__form">
                 <div class="section-contact__form-container">
                     <!-- This div controls the content on larger screens than 600px -->
-                    <div class="section-contact__input-box">
+                    <div class="section-contact__input-box" data-animation="tooltip" aria-label="This field cannot be empty. The email must contain @ and immediately after a valid provider.">
                         <input type="email" name="emailUser" id="emailUser" class="section-contact__input"
                             placeholder="Enter your email address" data-animation="form-input">
-                            <!-- This icon appears by JavaScript only if the input is valid or not  -->
+                        <!-- This icon appears by JavaScript only if the input is valid or not  -->
                         <i class="section-contact__alert-icon fas"></i>
                     </div>
 

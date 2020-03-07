@@ -49,13 +49,6 @@
     &:focus {
       outline: none;
     }
-
-    &:hover {
-      cursor: pointer;
-      color: $color-soft-red;
-      background-color: $color-white;
-      border-color: $color-soft-red;
-    }
   }
 
   &--login {
@@ -64,7 +57,7 @@
     background-color: transparent;
     border: 0.1rem solid $color-white;
 
-    width: 100%;
+    width: calc(100% - 1rem);
     margin-top: $margin-sm;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
@@ -95,6 +88,15 @@
     &--disable {
       &:hover {
         border-color: darken($color-white, 60%);
+      }
+    }
+
+    &--form {
+      &:hover {
+        cursor: pointer;
+        color: $color-soft-red;
+        background-color: $color-white;
+        border-color: $color-soft-red;
       }
     }
   }

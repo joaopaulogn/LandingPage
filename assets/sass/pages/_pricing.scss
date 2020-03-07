@@ -3,6 +3,36 @@
   padding-bottom: $padding-bottom-section;
   padding-top: $padding-top-section;
 
+  &__content {
+    margin-top: $margin-md;
+
+    &-box {
+      min-width: 31.5%;
+      background-color: $color-white;
+      box-shadow: 0 0.5rem 1rem darken($color-grayish-blue-light, 5%);
+      border-radius: 1.5rem;
+      padding: $padding-md 0 2.5rem 0;
+      margin-bottom: $margin-md;
+    }
+
+    &-photo {
+      margin-bottom: $margin-md;
+    }
+
+    &-text {
+      font-size: $font-size-default;
+      color: darken($color-white, 50%);
+      margin-bottom: $margin-sm;
+      margin-top: 1rem;
+    }
+
+    &-split {
+      margin-bottom: $margin-sm;
+      margin-top: $margin-sm;
+      width: 100%;
+    }
+  }
+
   @media only screen and (min-width: $breakpoint-md) {
     margin: 0 auto;
 
@@ -17,8 +47,8 @@
       flex-wrap: wrap;
 
       &-box {
-        padding-right: $padding-sm;
-        padding-left: $padding-sm;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
 
         &:first-child {
           margin-right: 4%;
@@ -64,36 +94,6 @@
           transform: translateY(12rem);
         }
       }
-    }
-  }
-
-  &__content {
-    margin-top: $margin-md;
-
-    &-box {
-      min-width: 31.5%;
-      background-color: $color-white;
-      box-shadow: 0 0.5rem 1rem darken($color-grayish-blue-light, 5%);
-      border-radius: 1.5rem;
-      padding: $padding-md 0 2.5rem 0;
-      margin-bottom: $margin-md;
-    }
-
-    &-photo {
-      margin-bottom: $margin-md;
-    }
-
-    &-text {
-      font-size: $font-size-default;
-      color: darken($color-white, 50%);
-      margin-bottom: $margin-sm;
-      margin-top: 1rem;
-    }
-
-    &-split {
-      margin-bottom: $margin-sm;
-      margin-top: $margin-sm;
-      width: 100%;
     }
   }
 }

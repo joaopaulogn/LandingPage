@@ -3,6 +3,30 @@
   padding-bottom: $padding-bottom-section;
   padding-top: 8rem;
 
+  &__hero-box {
+    margin-bottom: 6rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+
+      position: absolute;
+      top: 25%;
+      right: -2.5rem;
+      height: 75%;
+      width: 80%;
+      background-color: $color-soft-blue;
+      border-bottom-left-radius: 40%;
+
+      z-index: -1;
+
+      @media only screen and (min-width: $breakpoint-lg) {
+        right: calc(-2.5rem - 2vw);
+      }
+    }
+  }
+
   @media only screen and (min-width: $breakpoint-md) {
     .paragraph {
       max-width: 400px;
@@ -53,30 +77,6 @@
 
     &__content {
       margin-right: 0;
-    }
-  }
-
-  &__hero-box {
-    margin-bottom: 6rem;
-    position: relative;
-
-    &::before {
-      content: "";
-      display: block;
-
-      position: absolute;
-      top: 25%;
-      right: -2.5rem;
-      height: 75%;
-      width: 80%;
-      background-color: $color-soft-blue;
-      border-bottom-left-radius: 40%;
-
-      z-index: -1;
-
-      @media only screen and (min-width: $breakpoint-lg) {
-        right: calc(-2.5rem - 2vw);
-      }
     }
   }
 }

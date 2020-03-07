@@ -5,6 +5,7 @@ body {
 
 .heading-primary {
   @include font(h1);
+  
   @media only screen and (min-width: $breakpoint-lg) {
     font-size: 4.8rem;
   }

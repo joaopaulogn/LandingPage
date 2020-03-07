@@ -2,23 +2,6 @@
   text-align: center;
   padding-bottom: $padding-bottom-section;
 
-  @media only screen and (min-width: $breakpoint-md) {
-    max-width: 500px;
-    margin: 0 auto;
-
-    .paragraph {
-      max-width: 400px;
-      margin-right: auto;
-      margin-left: auto;
-    }
-  }
-
-  @media only screen and (min-width: $breakpoint-lg) {
-    .paragraph {
-      max-width: 450px;
-    }
-  }
-
   &__list {
     text-align: initial;
     margin-bottom: $margin-md;
@@ -54,6 +37,23 @@
     margin: $margin-sm 0;
     color: darken($color-white, 50%);
   }
+
+  @media only screen and (min-width: $breakpoint-md) {
+    max-width: 500px;
+    margin: 0 auto;
+
+    .paragraph {
+      max-width: 400px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  @media only screen and (min-width: $breakpoint-lg) {
+    .paragraph {
+      max-width: 450px;
+    }
+  }
 }
 
 // Styles activated by JavaScript
@@ -62,7 +62,7 @@
 [data-animation="accordionAnswer"] {
   display: none;
 }
-.activeAccordionAnswer {
+.activeAnswer {
   display: block;
   border-bottom: 0.1rem solid darken($color-grayish-blue-light, 5%);
   padding-bottom: 1.5rem;
@@ -71,7 +71,7 @@
 }
 
 // Accordion term styles
-.activeAccordionTerm {
+.activeTerm {
   border-bottom-color: transparent;
 }
 
@@ -79,7 +79,7 @@
 [data-animation="svg-arrow"] {
   transition: 0.3s ease-out;
 }
-.activeAccordionState {
+.activeState {
   stroke: $color-soft-red;
   transform: rotateX(180deg);
   transform-origin: 50% 50%;

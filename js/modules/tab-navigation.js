@@ -20,8 +20,8 @@ export default function initNavTab() {
         // Function to activate click event
         function activeTab(index) {
             // Loop through content and items to remove the classes
-            navContent.forEach((item) => {
-                item.classList.remove(classContent);
+            navContent.forEach((content) => {
+                content.classList.remove(classContent);
             });
 
             navItem.forEach((item) => {
