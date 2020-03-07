@@ -52,15 +52,20 @@
   }
 
   &--login {
-    @include btnDefaultStyle(link);
+    @include btnDefaultStyle(button);
     color: darken($color-white, 10%);
     background-color: transparent;
     border: 0.1rem solid $color-white;
+    padding: 1.5rem 0.9rem;
 
     width: calc(100% - 1rem);
     margin-top: $margin-sm;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
+
+    &:focus {
+      outline: none;
+    }
   }
 
   &--pricing {

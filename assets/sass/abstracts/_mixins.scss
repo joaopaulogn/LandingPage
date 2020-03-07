@@ -23,7 +23,9 @@
 }
 
 @mixin btnDefaultStyle($style) {
+  font-family: inherit;
   border-radius: 0.5rem;
+  
   @if ($style == link) {
     display: inline-block;
     font-size: $font-size-sm;
@@ -32,8 +34,6 @@
   } @else if($style == button) {
     border: none;
     padding: 1.5rem 1.3rem;
-    border-radius: 0.5rem;
-    font-family: inherit;
     font-size: $font-size-sm;
   }
 }
